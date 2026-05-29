@@ -1468,12 +1468,155 @@
     background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), rgba(201,168,76,0.2), transparent);
     margin: 0 36px;
   }
+
+  /* =========================================
+     MOBILE RESPONSIVE STYLES (ADDED)
+     ========================================= */
+  @media (max-width: 768px) {
+    body { padding: 0; background: var(--navy); }
+    .infographic { width: 100%; max-width: 100%; border-radius: 0; }
+
+    /* Typography Scaling for Readability on Mobile */
+    .logo-text { font-size: 24px; }
+    .logo-sub { font-size: 11px; }
+    .investment-tag { font-size: 11px; padding: 8px 16px; }
+    .property-category { font-size: 11px; }
+    .property-name { font-size: 46px; margin-top: 12px; }
+    .property-name-sub { font-size: 18px; }
+    .location-line { font-size: 12px; line-height: 1.5; align-items: flex-start; }
+    .location-dot { margin-top: 5px; }
+
+    .kpi-val { font-size: 34px; }
+    .kpi-unit { font-size: 13px; }
+    .kpi-label { font-size: 11px; }
+
+    .section { padding: 24px 20px; }
+    .section-num { font-size: 18px; }
+    .section-title { font-size: 13px; }
+
+    .snapshot-card-label { font-size: 11px; }
+    .snapshot-card-val { font-size: 32px; }
+    .snapshot-card-val span { font-size: 16px; }
+    .snapshot-card-note { font-size: 12px; line-height: 1.4; }
+
+    .asking-label { font-size: 13px; }
+    .asking-val { font-size: 46px; }
+    .discount-badge { font-size: 12px; padding: 6px 14px; }
+    .breakdown-item { font-size: 13px; margin-bottom: 4px; }
+
+    .ba-label { font-size: 12px; padding: 12px 16px; }
+    .tag-before, .tag-after { font-size: 11px; padding: 5px 12px; }
+    .upgrade-tags { padding: 12px 16px 16px; }
+
+    .vcb-label { font-size: 12px; }
+    .vcb-val { font-size: 13px; }
+
+    .financial-table th { font-size: 12px; padding: 12px; }
+    .financial-table td { font-size: 13px; padding: 12px; }
+
+    .exit-card-label { font-size: 12px; }
+    .exit-irr { font-size: 44px; }
+    .exit-irr-label { font-size: 12px; }
+    .exit-metric { font-size: 13px; line-height: 2; }
+
+    .exp-title { font-size: 13px; }
+    .exp-stat { font-size: 14px; margin-bottom: 8px; }
+
+    .market-card-title { font-size: 13px; margin-bottom: 14px; }
+    .market-stat-label { font-size: 13px; }
+    .market-stat-val { font-size: 14px; }
+
+    .comp-name { font-size: 13px; margin-bottom: 8px; }
+    .comp-adr { font-size: 28px; }
+    .comp-adr-label { font-size: 11px; margin-top: 4px; }
+    .comp-stars { font-size: 12px; }
+
+    .review-source { font-size: 13px; }
+    .review-score { font-size: 13px; padding: 4px 10px; }
+    .review-text { font-size: 14px; line-height: 1.7; }
+
+    .why-num { font-size: 46px; width: auto; margin-right: 16px; margin-top: -5px; text-align: left; }
+    .why-text strong { font-size: 15px; margin-bottom: 6px; }
+    .why-text p { font-size: 14px; line-height: 1.6; }
+
+    .tl-dot { width: 36px; height: 36px; font-size: 14px; margin: 0 20px 0 0; }
+    .tl-title { font-size: 15px; margin-bottom: 4px; }
+    .tl-date { font-size: 13px; }
+
+    .cta-headline { font-size: 38px; line-height: 1.1; margin-bottom: 12px; }
+    .cta-sub { font-size: 13px; margin-bottom: 30px; }
+    .contact-label { font-size: 12px; }
+    .contact-val { font-size: 18px; }
+    .confidential-text { font-size: 10px; line-height: 1.5; }
+    .page-num { font-size: 10px; }
+
+    /* Layout Restructuring for Vertical View */
+    .header-top-bar { flex-direction: column; align-items: flex-start; gap: 16px; padding: 24px 20px; }
+    .header-main { padding: 24px 20px 50px; }
+    .investment-tag { clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); align-self: flex-start; }
+
+    .kpi-band { grid-template-columns: 1fr 1fr; }
+    .kpi-item { padding: 20px 12px; border-bottom: 1px solid rgba(0,0,0,0.15); }
+    .kpi-item:nth-child(even) { border-right: none; }
+    .kpi-item:last-child { grid-column: 1 / -1; border-right: none; border-bottom: none; }
+
+    .snapshot-grid { grid-template-columns: 1fr; gap: 16px; }
+    .asking-price-card { flex-direction: column; align-items: flex-start; gap: 20px; padding: 24px 20px; }
+    .asking-price-card::after { display: none; }
+    .asking-breakdown { text-align: left; }
+
+    .before-after-container { grid-template-columns: 1fr; border-radius: 4px; border: none; }
+    .ba-panel.before { border-right: none; border-bottom: 2px solid var(--gold); border-radius: 4px 4px 0 0; }
+    .ba-panel.after { border-radius: 0 0 4px 4px; }
+    .hotel-visual { min-height: 280px; }
+
+    /* Table Scroll Wrapper styles */
+    .table-responsive { overflow-x: auto; width: calc(100% + 40px); margin: 0 -20px; padding: 0 20px; -webkit-overflow-scrolling: touch; }
+    .financial-table { min-width: 600px; margin-bottom: 0; }
+
+    .exit-scenarios { grid-template-columns: 1fr; gap: 16px; }
+    .exit-card.base { transform: none; box-shadow: none; border-width: 2px; }
+
+    .expansion-row { flex-direction: column; gap: 16px; }
+    .expansion-arrow { flex-direction: row; padding: 8px 0; }
+    .arrow-line { width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+    .arrow-head { transform: rotate(90deg); margin: 0 16px; }
+    .expansion-arrow div:nth-child(3) { font-size: 12px !important; margin: 0 10px; }
+
+    .market-grid { grid-template-columns: 1fr; gap: 16px; }
+    .comp-set { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .reviews-grid { grid-template-columns: 1fr; gap: 16px; }
+
+    .why-now-list li { flex-direction: column; padding: 16px 0; gap: 8px; }
+
+    .timeline { flex-direction: column; align-items: flex-start; gap: 24px; padding-left: 0; margin-top: 10px; }
+    .timeline::before { left: 17px; top: 36px; height: calc(100% - 36px); width: 2px; background: rgba(201,168,76,0.3); }
+    .tl-step { flex-direction: row; text-align: left; align-items: center; width: 100%; }
+
+    .contact-row { grid-template-columns: 1fr; gap: 24px; }
+    .contact-divider { width: 80px; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent); margin: 0 auto; }
+    .footer-cta { padding: 40px 20px; }
+    .confidential-bar { flex-direction: column; gap: 12px; padding: 16px 20px; text-align: center; }
+    .full-width-divider { margin: 0 20px; }
+
+    /* Inline style override for specific multi-column grids */
+    div[style*="grid-template-columns:1fr 1fr 1fr;"],
+    div[style*="grid-template-columns: 1fr 1fr 1fr;"] {
+      grid-template-columns: 1fr !important; gap: 12px !important;
+    }
+    div[style*="grid-template-columns:1fr 1fr;"] {
+      grid-template-columns: 1fr !important; gap: 12px !important;
+    }
+    div[style*="grid-template-columns:repeat(4,1fr);"],
+    div[style*="grid-template-columns: repeat(4, 1fr);"] {
+      grid-template-columns: 1fr 1fr !important; gap: 12px !important;
+    }
+  }
 </style>
 </head>
 <body>
 <div class="infographic">
 
-  <!-- ===== HEADER ===== -->
   <div class="header">
     <div class="header-bg"></div>
     <div class="header-grid-lines"></div>
@@ -1500,7 +1643,6 @@
     <div class="diagonal-accent"></div>
   </div>
 
-  <!-- ===== KPI BAND ===== -->
   <div class="kpi-band">
     <div class="kpi-item">
       <span class="kpi-val">249</span>
@@ -1529,7 +1671,6 @@
     </div>
   </div>
 
-  <!-- ===== SECTION 1: INVESTMENT SNAPSHOT ===== -->
   <div class="section">
     <div class="section-header">
       <span class="section-num">01</span>
@@ -1577,7 +1718,6 @@
     </div>
   </div>
 
-  <!-- ===== SECTION 2: BEFORE & AFTER REPOSITIONING ===== -->
   <div class="section section-bg-alt">
     <div class="section-header">
       <span class="section-num">02</span>
@@ -1587,11 +1727,9 @@
 
     <div class="before-after-container">
 
-      <!-- BEFORE -->
       <div class="ba-panel before">
         <div class="ba-label">◀ Before — Current State</div>
         <div class="hotel-visual hotel-before">
-          <!-- Sky -->
           <div class="sky-before">
             <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.4" viewBox="0 0 200 80">
               <circle cx="30" cy="15" r="1" fill="white"/>
@@ -1606,7 +1744,6 @@
               <circle cx="100" cy="25" r="0.6" fill="white"/>
             </svg>
           </div>
-          <!-- Building -->
           <div class="building-before" style="border-radius:0;">
             <div class="roof-before"></div>
             <div class="windows-grid">
@@ -1618,9 +1755,7 @@
               <div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div>
             </div>
           </div>
-          <!-- Pool -->
           <div class="pool-before"></div>
-          <!-- Sea -->
           <div class="ground-before"></div>
           <div class="sea-before">
             <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.3" viewBox="0 0 200 40">
@@ -1638,11 +1773,9 @@
         </div>
       </div>
 
-      <!-- AFTER -->
       <div class="ba-panel after">
         <div class="ba-label">▶ After — Repositioned &amp; Branded</div>
         <div class="hotel-visual hotel-after">
-          <!-- Night sky with stars -->
           <div class="sky-after">
             <svg style="position:absolute;inset:0;width:100%;height:100%;" viewBox="0 0 200 80">
               <circle cx="30" cy="12" r="1.2" fill="white" opacity="0.9"/>
@@ -1656,19 +1789,16 @@
               <circle cx="48" cy="28" r="0.4" fill="white" opacity="0.7"/>
               <circle cx="98" cy="22" r="0.7" fill="white" opacity="0.8"/>
               <circle cx="130" cy="30" r="0.5" fill="white" opacity="0.5"/>
-              <!-- Moon glow -->
               <circle cx="175" cy="15" r="8" fill="rgba(255,240,180,0.08)"/>
               <circle cx="175" cy="15" r="5" fill="rgba(255,240,180,0.12)"/>
               <circle cx="175" cy="15" r="3" fill="rgba(255,240,180,0.2)"/>
             </svg>
           </div>
-          <!-- Brand crown -->
           <div class="brand-crown">
             <div class="brand-crown-line"></div>
             <div class="brand-crown-text">★ Cliff Grand Pattaya ★</div>
             <div class="brand-crown-line"></div>
           </div>
-          <!-- Building after -->
           <div class="building-after-main">
             <div class="roof-after"></div>
             <div class="windows-luxury">
@@ -1680,7 +1810,6 @@
               <div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div>
             </div>
           </div>
-          <!-- Amenity dots -->
           <div class="amenity-dots">
             <div class="amenity-dot"></div>
             <div class="amenity-dot teal"></div>
@@ -1688,7 +1817,6 @@
             <div class="amenity-dot teal"></div>
             <div class="amenity-dot"></div>
           </div>
-          <!-- Infinity pool -->
           <div class="pool-after">
             <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 100 10">
               <defs><linearGradient id="pg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="rgba(33,200,255,0)"/><stop offset="50%" stop-color="rgba(33,200,255,0.4)"/><stop offset="100%" stop-color="rgba(33,200,255,0)"/></linearGradient></defs>
@@ -1696,7 +1824,6 @@
               <path d="M0 3 Q25 1 50 3 Q75 5 100 3" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
             </svg>
           </div>
-          <!-- Sea -->
           <div class="ground-after"></div>
           <div class="sea-after">
             <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.5" viewBox="0 0 200 40">
@@ -1704,7 +1831,6 @@
               <path d="M0 18 Q25 13 50 20 Q75 26 100 18 Q125 11 150 20 Q175 26 200 18" fill="none" stroke="rgba(33,150,211,0.5)" stroke-width="0.8"/>
             </svg>
           </div>
-          <!-- Gold lighting effect at bottom of building -->
           <div style="position:absolute;bottom:30%;left:10%;width:80%;height:4px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.5),transparent);"></div>
         </div>
         <div class="upgrade-tags" style="min-height:72px;">
@@ -1717,7 +1843,6 @@
       </div>
     </div>
 
-    <!-- ADR Uplift Visual -->
     <div style="background:rgba(0,0,0,0.2);border:1px solid rgba(201,168,76,0.12);border-radius:4px;padding:16px 20px;">
       <div style="font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">ADR Repositioning Trajectory</div>
       <div class="value-creation-bar">
@@ -1759,7 +1884,6 @@
     </div>
   </div>
 
-  <!-- ===== SECTION 3: FINANCIAL MODEL ===== -->
   <div class="section financials-section">
     <div class="section-header">
       <span class="section-num">03</span>
@@ -1767,90 +1891,92 @@
       <div class="section-line"></div>
     </div>
 
-    <table class="financial-table">
-      <thead>
-        <tr>
-          <th style="width:38%">Metric</th>
-          <th>Current</th>
-          <th>Post-Reno</th>
-          <th>Branded Exit</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Keys</td>
-          <td>249</td>
-          <td>249</td>
-          <td>320 (+70)</td>
-        </tr>
-        <tr>
-          <td>ADR (THB)</td>
-          <td>3,000</td>
-          <td>4,200</td>
-          <td class="highlight-gold">5,500</td>
-        </tr>
-        <tr>
-          <td>Occupancy</td>
-          <td>75%</td>
-          <td>78%</td>
-          <td class="highlight-gold">82%</td>
-        </tr>
-        <tr>
-          <td>RevPAR (THB)</td>
-          <td>2,250</td>
-          <td>3,276</td>
-          <td class="highlight-gold">4,510</td>
-        </tr>
-        <tr>
-          <td>Room Revenue (MB/yr)</td>
-          <td>204.4</td>
-          <td>297.5</td>
-          <td class="positive">526.5</td>
-        </tr>
-        <tr>
-          <td>F&amp;B / Ancillary (MB/yr)</td>
-          <td>50</td>
-          <td>70</td>
-          <td>120</td>
-        </tr>
-        <tr class="subtotal">
-          <td>Total Revenue (MB/yr)</td>
-          <td>254</td>
-          <td>368</td>
-          <td class="highlight-gold">647</td>
-        </tr>
-        <tr>
-          <td>GOP Margin</td>
-          <td>32%</td>
-          <td>38%</td>
-          <td class="highlight-gold">42%</td>
-        </tr>
-        <tr class="subtotal">
-          <td>GOP (MB/yr)</td>
-          <td>81</td>
-          <td>140</td>
-          <td class="highlight-gold">272</td>
-        </tr>
-        <tr>
-          <td>EBITDA (MB/yr)</td>
-          <td>65</td>
-          <td>116</td>
-          <td class="highlight-gold">230</td>
-        </tr>
-        <tr>
-          <td>Cap Rate (Exit)</td>
-          <td>—</td>
-          <td>7.5%</td>
-          <td class="highlight-gold">6.5%</td>
-        </tr>
-        <tr class="total-row">
-          <td>Implied Asset Value (MB)</td>
-          <td>1,700</td>
-          <td>2,200</td>
-          <td class="positive">3,538</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-responsive">
+      <table class="financial-table">
+        <thead>
+          <tr>
+            <th style="width:38%">Metric</th>
+            <th>Current</th>
+            <th>Post-Reno</th>
+            <th>Branded Exit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Keys</td>
+            <td>249</td>
+            <td>249</td>
+            <td>320 (+70)</td>
+          </tr>
+          <tr>
+            <td>ADR (THB)</td>
+            <td>3,000</td>
+            <td>4,200</td>
+            <td class="highlight-gold">5,500</td>
+          </tr>
+          <tr>
+            <td>Occupancy</td>
+            <td>75%</td>
+            <td>78%</td>
+            <td class="highlight-gold">82%</td>
+          </tr>
+          <tr>
+            <td>RevPAR (THB)</td>
+            <td>2,250</td>
+            <td>3,276</td>
+            <td class="highlight-gold">4,510</td>
+          </tr>
+          <tr>
+            <td>Room Revenue (MB/yr)</td>
+            <td>204.4</td>
+            <td>297.5</td>
+            <td class="positive">526.5</td>
+          </tr>
+          <tr>
+            <td>F&amp;B / Ancillary (MB/yr)</td>
+            <td>50</td>
+            <td>70</td>
+            <td>120</td>
+          </tr>
+          <tr class="subtotal">
+            <td>Total Revenue (MB/yr)</td>
+            <td>254</td>
+            <td>368</td>
+            <td class="highlight-gold">647</td>
+          </tr>
+          <tr>
+            <td>GOP Margin</td>
+            <td>32%</td>
+            <td>38%</td>
+            <td class="highlight-gold">42%</td>
+          </tr>
+          <tr class="subtotal">
+            <td>GOP (MB/yr)</td>
+            <td>81</td>
+            <td>140</td>
+            <td class="highlight-gold">272</td>
+          </tr>
+          <tr>
+            <td>EBITDA (MB/yr)</td>
+            <td>65</td>
+            <td>116</td>
+            <td class="highlight-gold">230</td>
+          </tr>
+          <tr>
+            <td>Cap Rate (Exit)</td>
+            <td>—</td>
+            <td>7.5%</td>
+            <td class="highlight-gold">6.5%</td>
+          </tr>
+          <tr class="total-row">
+            <td>Implied Asset Value (MB)</td>
+            <td>1,700</td>
+            <td>2,200</td>
+            <td class="positive">3,538</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <div style="display:flex;gap:10px;align-items:center;background:rgba(39,174,96,0.07);border:1px solid rgba(39,174,96,0.2);border-radius:3px;padding:12px 16px;">
       <div style="font-size:22px;color:var(--green-accent);">↑</div>
@@ -1863,7 +1989,6 @@
 
   <div class="full-width-divider"></div>
 
-  <!-- ===== SECTION 4: EXIT STRATEGY ===== -->
   <div class="section exit-strategy">
     <div class="section-header">
       <span class="section-num">04</span>
@@ -1912,7 +2037,6 @@
       </div>
     </div>
 
-    <!-- Exit Options -->
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:3px;padding:12px 14px;text-align:center;">
         <div style="font-size:18px;margin-bottom:6px;">🏨</div>
@@ -1932,7 +2056,6 @@
     </div>
   </div>
 
-  <!-- ===== SECTION 5: EXPANSION OPPORTUNITY ===== -->
   <div class="section">
     <div class="section-header">
       <span class="section-num">05</span>
@@ -1986,7 +2109,6 @@
 
   <div class="full-width-divider"></div>
 
-  <!-- ===== SECTION 6: MARKET INTELLIGENCE ===== -->
   <div class="section section-bg-alt">
     <div class="section-header">
       <span class="section-num">06</span>
@@ -2045,7 +2167,6 @@
       </div>
     </div>
 
-    <!-- Pipeline Awareness -->
     <div style="background:rgba(192,57,43,0.06);border:1px solid rgba(192,57,43,0.2);border-radius:3px;padding:12px 16px;margin-bottom:12px;">
       <div style="font-size:8px;font-weight:700;color:#E74C3C;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">⚠ Competitive Pipeline — Act Now</div>
       <div style="font-size:9.5px;color:rgba(255,255,255,0.6);line-height:1.7;">
@@ -2054,7 +2175,6 @@
     </div>
   </div>
 
-  <!-- ===== SECTION 7: COMPETITIVE SET ===== -->
   <div class="section">
     <div class="section-header">
       <span class="section-num">07</span>
@@ -2098,7 +2218,6 @@
 
   <div class="full-width-divider"></div>
 
-  <!-- ===== SECTION 8: GUEST REVIEWS ===== -->
   <div class="section section-bg-alt">
     <div class="section-header">
       <span class="section-num">08</span>
@@ -2149,7 +2268,6 @@
     </div>
   </div>
 
-  <!-- ===== SECTION 9: WHY NOW ===== -->
   <div class="section">
     <div class="section-header">
       <span class="section-num">09</span>
@@ -2196,7 +2314,6 @@
     </ul>
   </div>
 
-  <!-- ===== SECTION 10: HOLD TIMELINE ===== -->
   <div class="section section-bg-alt">
     <div class="section-header">
       <span class="section-num">10</span>
@@ -2207,28 +2324,38 @@
     <div class="timeline">
       <div class="tl-step">
         <div class="tl-dot active">1</div>
-        <div class="tl-title">Acquire</div>
-        <div class="tl-date">2025/Q4</div>
+        <div>
+          <div class="tl-title">Acquire</div>
+          <div class="tl-date">2025/Q4</div>
+        </div>
       </div>
       <div class="tl-step">
         <div class="tl-dot">2</div>
-        <div class="tl-title">Rebrand & Reposition</div>
-        <div class="tl-date">Yr 1–2</div>
+        <div>
+          <div class="tl-title">Rebrand & Reposition</div>
+          <div class="tl-date">Yr 1–2</div>
+        </div>
       </div>
       <div class="tl-step">
         <div class="tl-dot">3</div>
-        <div class="tl-title">Expand +70 Keys</div>
-        <div class="tl-date">Yr 2–3</div>
+        <div>
+          <div class="tl-title">Expand +70 Keys</div>
+          <div class="tl-date">Yr 2–3</div>
+        </div>
       </div>
       <div class="tl-step">
         <div class="tl-dot">4</div>
-        <div class="tl-title">Stabilize EBITDA</div>
-        <div class="tl-date">Yr 4–5</div>
+        <div>
+          <div class="tl-title">Stabilize EBITDA</div>
+          <div class="tl-date">Yr 4–5</div>
+        </div>
       </div>
       <div class="tl-step">
         <div class="tl-dot">5</div>
-        <div class="tl-title">Strategic Exit</div>
-        <div class="tl-date">Yr 5–7</div>
+        <div>
+          <div class="tl-title">Strategic Exit</div>
+          <div class="tl-date">Yr 5–7</div>
+        </div>
       </div>
     </div>
 
@@ -2256,7 +2383,6 @@
     </div>
   </div>
 
-  <!-- ===== FOOTER CTA ===== -->
   <div class="footer-cta">
     <div class="cta-headline">Seize the Beachfront Advantage</div>
     <div class="cta-sub">An Exclusive Acquisition Opportunity · Strictly Confidential</div>
@@ -2286,7 +2412,6 @@
     <div class="page-num">Garden Cliff Resort &amp; Spa Pattaya · Investment Memorandum · 2025</div>
   </div>
 
-  <!-- Watermark -->
   <div class="watermark" style="position:fixed;pointer-events:none;z-index:0;opacity:0.015;">JC</div>
 
 </div>
