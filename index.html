@@ -1,2421 +1,2136 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Garden Cliff Resort — Investment Opportunity</title>
+<title>Garden Cliff Resort & Spa Pattaya — Investment Memorandum | Joe Collection</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@300;400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --gold: #C9A84C;
-    --gold-light: #E8C96A;
-    --gold-pale: #F5E6B8;
-    --navy: #0A1628;
-    --navy-mid: #112240;
-    --navy-light: #1E3A5F;
-    --cream: #FAF6EE;
-    --white: #FFFFFF;
-    --teal: #1B6CA8;
-    --teal-bright: #2196D3;
-    --red-accent: #C0392B;
-    --green-accent: #27AE60;
-    --text-body: #2C3E50;
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    background: #0A0E17;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .infographic {
-    width: 800px;
-    background: var(--navy);
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* ===== HEADER ===== */
-  .header {
-    background: linear-gradient(135deg, #060E1C 0%, #0D1E38 40%, #152B4E 100%);
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 340px;
-  }
-
-  .header-bg {
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(ellipse 80% 60% at 60% 100%, rgba(201,168,76,0.12) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(33,150,211,0.08) 0%, transparent 60%);
-  }
-
-  .header-grid-lines {
-    position: absolute;
-    inset: 0;
-    opacity: 0.04;
-    background-image:
-      linear-gradient(0deg, transparent calc(100% - 1px), rgba(201,168,76,0.8) calc(100% - 1px)),
-      linear-gradient(90deg, transparent calc(100% - 1px), rgba(201,168,76,0.8) calc(100% - 1px));
-    background-size: 60px 60px;
-  }
-
-  .diagonal-accent {
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    right: 0;
-    height: 80px;
-    background: var(--navy);
-    clip-path: polygon(0 60%, 100% 0%, 100% 100%, 0% 100%);
-  }
-
-  .header-top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px 36px 16px;
-    position: relative;
-    z-index: 2;
-    border-bottom: 1px solid rgba(201,168,76,0.15);
-  }
-
-  .logo-badge {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .logo-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 4px;
-    color: var(--gold);
-    text-transform: uppercase;
-  }
-
-  .logo-sub {
-    font-size: 7px;
-    letter-spacing: 3px;
-    color: rgba(201,168,76,0.5);
-    text-transform: uppercase;
-    margin-top: 2px;
-  }
-
-  .logo-divider {
-    width: 40px;
-    height: 1px;
-    background: linear-gradient(90deg, var(--gold), transparent);
-    margin-top: 6px;
-  }
-
-  .investment-tag {
-    background: linear-gradient(135deg, var(--gold), #A87D2A);
-    color: var(--navy);
-    font-size: 8px;
-    font-weight: 800;
-    letter-spacing: 2.5px;
-    padding: 6px 14px;
-    text-transform: uppercase;
-    clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
-  }
-
-  .header-main {
-    padding: 24px 36px 60px;
-    position: relative;
-    z-index: 2;
-  }
-
-  .property-category {
-    font-size: 8px;
-    letter-spacing: 4px;
-    color: var(--gold);
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 12px;
-  }
-
-  .property-category::before,
-  .property-category::after {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 1px;
-    background: var(--gold);
-  }
-
-  .property-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 52px;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1.0;
-    margin-bottom: 6px;
-    letter-spacing: -1px;
-  }
-
-  .property-name em {
-    font-style: italic;
-    color: var(--gold-light);
-  }
-
-  .property-name-sub {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.5);
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-  }
-
-  .location-line {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 10px;
-    color: rgba(255,255,255,0.6);
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-  }
-
-  .location-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--gold);
-    flex-shrink: 0;
-  }
-
-  /* ===== HERO KPI BAND ===== */
-  .kpi-band {
-    background: linear-gradient(90deg, var(--gold) 0%, #B8892A 60%, #8B6318 100%);
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    position: relative;
-    z-index: 3;
-    margin-top: -2px;
-  }
-
-  .kpi-item {
-    padding: 18px 12px;
-    text-align: center;
-    border-right: 1px solid rgba(0,0,0,0.15);
-    position: relative;
-  }
-
-  .kpi-item:last-child { border-right: none; }
-
-  .kpi-val {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--navy);
-    line-height: 1;
-    display: block;
-  }
-
-  .kpi-unit {
-    font-size: 9px;
-    font-weight: 700;
-    color: rgba(10,22,40,0.65);
-    display: block;
-    letter-spacing: 1px;
-    margin-top: 1px;
-  }
-
-  .kpi-label {
-    font-size: 7px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: rgba(10,22,40,0.55);
-    margin-top: 4px;
-    display: block;
-  }
-
-  /* ===== SECTIONS ===== */
-  .section {
-    padding: 32px 36px;
-    position: relative;
-  }
-
-  .section + .section {
-    border-top: 1px solid rgba(201,168,76,0.12);
-  }
-
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 22px;
-  }
-
-  .section-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 13px;
-    color: var(--gold);
-    font-weight: 300;
-    letter-spacing: 2px;
-  }
-
-  .section-title {
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 3.5px;
-    text-transform: uppercase;
-    color: var(--white);
-  }
-
-  .section-line {
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, rgba(201,168,76,0.4), transparent);
-  }
-
-  /* ===== INVESTMENT SNAPSHOT ===== */
-  .snapshot-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 18px;
-  }
-
-  .snapshot-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(201,168,76,0.15);
-    border-radius: 4px;
-    padding: 16px 18px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .snapshot-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3px;
-    height: 100%;
-    background: linear-gradient(180deg, var(--gold), transparent);
-  }
-
-  .snapshot-card-label {
-    font-size: 7.5px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.4);
-    margin-bottom: 6px;
-  }
-
-  .snapshot-card-val {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
-    color: var(--white);
-    font-weight: 600;
-    line-height: 1;
-  }
-
-  .snapshot-card-val span {
-    font-size: 12px;
-    color: var(--gold);
-    font-weight: 400;
-  }
-
-  .snapshot-card-note {
-    font-size: 8px;
-    color: rgba(255,255,255,0.35);
-    margin-top: 4px;
-    letter-spacing: 0.5px;
-  }
-
-  .asking-price-card {
-    grid-column: 1 / -1;
-    background: linear-gradient(135deg, rgba(201,168,76,0.12), rgba(201,168,76,0.04));
-    border: 1px solid rgba(201,168,76,0.35);
-    border-radius: 4px;
-    padding: 20px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .asking-price-card::after {
-    content: 'FREEHOLD';
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%) rotate(90deg);
-    font-size: 7px;
-    letter-spacing: 3px;
-    color: rgba(201,168,76,0.2);
-    font-weight: 700;
-  }
-
-  .asking-label {
-    font-size: 8px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--gold);
-    display: block;
-    margin-bottom: 6px;
-  }
-
-  .asking-val {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 44px;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-
-  .asking-val em { color: var(--gold); font-style: normal; }
-
-  .asking-breakdown {
-    text-align: right;
-  }
-
-  .discount-badge {
-    background: var(--green-accent);
-    color: white;
-    font-size: 9px;
-    font-weight: 700;
-    padding: 5px 12px;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-    display: inline-block;
-  }
-
-  .breakdown-item {
-    font-size: 8.5px;
-    color: rgba(255,255,255,0.5);
-    letter-spacing: 0.5px;
-    line-height: 1.7;
-  }
-
-  .breakdown-item strong {
-    color: rgba(255,255,255,0.8);
-    font-weight: 600;
-  }
-
-  /* ===== BEFORE AFTER ===== */
-  .before-after-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    border: 1px solid rgba(201,168,76,0.2);
-    border-radius: 6px;
-    overflow: hidden;
-    margin-bottom: 16px;
-  }
-
-  .ba-panel {
-    position: relative;
-    padding: 0;
-    min-height: 320px;
-  }
-
-  .ba-panel.before {
-    background: linear-gradient(180deg, #1a2535 0%, #0f1a28 100%);
-    border-right: 2px solid var(--gold);
-  }
-
-  .ba-panel.after {
-    background: linear-gradient(180deg, #0d1f35 0%, #071525 100%);
-  }
-
-  .ba-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px 16px;
-    font-size: 8px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    z-index: 2;
-  }
-
-  .ba-panel.before .ba-label {
-    background: rgba(80,80,80,0.85);
-    color: rgba(255,255,255,0.7);
-  }
-
-  .ba-panel.after .ba-label {
-    background: linear-gradient(90deg, rgba(201,168,76,0.9), rgba(168,125,42,0.9));
-    color: var(--navy);
-  }
-
-  .hotel-visual {
-    width: 100%;
-    height: 100%;
-    min-height: 320px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* BEFORE hotel illustration */
-  .hotel-before {
-    background: linear-gradient(180deg, #2a3a50 0%, #1a2535 50%, #0f1820 100%);
-  }
-
-  .hotel-after {
-    background: linear-gradient(180deg, #0a1e35 0%, #0d2640 50%, #061520 100%);
-  }
-
-  /* Sky */
-  .sky-before {
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 45%;
-    background: linear-gradient(180deg, #1a2838 0%, #243650 100%);
-  }
-
-  .sky-after {
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 45%;
-    background: linear-gradient(180deg, #050e1f 0%, #0a1e38 50%, #122a4a 100%);
-  }
-
-  .stars {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-  }
-
-  .star {
-    position: absolute;
-    background: white;
-    border-radius: 50%;
-  }
-
-  /* Sea */
-  .sea-before {
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 30%;
-    background: linear-gradient(180deg, #1a3850 0%, #0a1e30 100%);
-  }
-
-  .sea-after {
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 30%;
-    background: linear-gradient(180deg, #0d2540 0%, #050f1e 100%);
-    box-shadow: inset 0 10px 30px rgba(33,150,211,0.15);
-  }
-
-  /* Building before */
-  .building-before {
-    position: absolute;
-    bottom: 30%;
-    left: 15%;
-    width: 70%;
-    height: 55%;
-    background: #2a3a4f;
-    border-top: 2px solid #3a4f6a;
-  }
-
-  .building-after-main {
-    position: absolute;
-    bottom: 30%;
-    left: 10%;
-    width: 80%;
-    height: 58%;
-    background: linear-gradient(180deg, #1a3050 0%, #0f2240 100%);
-    border-top: 2px solid var(--gold);
-    box-shadow: 0 0 40px rgba(33,150,211,0.1);
-  }
-
-  /* Windows grid before */
-  .windows-grid {
-    position: absolute;
-    top: 12px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 3px;
-  }
-
-  .win {
-    background: rgba(180,160,80,0.3);
-    border-radius: 1px;
-  }
-
-  .win-lit {
-    background: rgba(255,220,100,0.5);
-    box-shadow: 0 0 4px rgba(255,220,100,0.4);
-  }
-
-  .win-dark {
-    background: rgba(40,55,70,0.8);
-  }
-
-  /* Windows after - luxury look */
-  .windows-luxury {
-    position: absolute;
-    top: 12px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 3px;
-  }
-
-  .win-luxury {
-    background: rgba(33,150,211,0.15);
-    border: 1px solid rgba(201,168,76,0.2);
-    border-radius: 1px;
-  }
-
-  .win-luxury-lit {
-    background: rgba(33,150,211,0.35);
-    border: 1px solid rgba(201,168,76,0.4);
-    box-shadow: 0 0 6px rgba(33,150,211,0.3);
-  }
-
-  /* Pool before */
-  .pool-before {
-    position: absolute;
-    bottom: 28%;
-    left: 20%;
-    width: 60%;
-    height: 6%;
-    background: rgba(30,80,120,0.5);
-    border: 1px solid rgba(30,100,150,0.4);
-  }
-
-  /* Pool after - infinity */
-  .pool-after {
-    position: absolute;
-    bottom: 28%;
-    left: 15%;
-    width: 70%;
-    height: 7%;
-    background: linear-gradient(90deg, rgba(33,150,211,0.4), rgba(0,180,220,0.3));
-    border: 1px solid rgba(33,200,255,0.5);
-    box-shadow: 0 4px 20px rgba(33,150,211,0.3), 0 0 8px rgba(33,200,255,0.2);
-  }
-
-  /* Ground before */
-  .ground-before {
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 30%;
-    background: linear-gradient(180deg, #1a2830 0%, #0f1a22 100%);
-  }
-
-  .ground-after {
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 30%;
-    background: linear-gradient(180deg, #0d1f30 0%, #060f1a 100%);
-  }
-
-  /* Roof before - flat */
-  .roof-before {
-    position: absolute;
-    top: -6px;
-    left: -5px;
-    right: -5px;
-    height: 12px;
-    background: #3a4f65;
-    border-top: 2px solid #4a627d;
-  }
-
-  /* Roof after - modern */
-  .roof-after {
-    position: absolute;
-    top: -10px;
-    left: -8px;
-    right: -8px;
-    height: 16px;
-    background: linear-gradient(90deg, var(--gold) 0%, #C9A84C 50%, #A87D2A 100%);
-    clip-path: polygon(0 100%, 4% 0%, 96% 0%, 100% 100%);
-  }
-
-  /* Label after branding */
-  .brand-crown {
-    position: absolute;
-    top: 22px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    z-index: 5;
-  }
-
-  .brand-crown-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 9px;
-    color: var(--gold);
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-
-  .brand-crown-line {
-    width: 60px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    margin: 3px auto;
-  }
-
-  /* Amenity indicators after */
-  .amenity-dots {
-    position: absolute;
-    bottom: 32%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 6px;
-    z-index: 5;
-  }
-
-  .amenity-dot {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: var(--gold);
-    box-shadow: 0 0 6px rgba(201,168,76,0.6);
-  }
-
-  .amenity-dot.teal { background: var(--teal-bright); box-shadow: 0 0 6px rgba(33,150,211,0.6); }
-
-  /* Upgrade tags */
-  .upgrade-tags {
-    padding: 10px 14px 14px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    background: rgba(0,0,0,0.3);
-  }
-
-  .tag-before {
-    font-size: 7.5px;
-    padding: 3px 10px;
-    border: 1px solid rgba(255,255,255,0.15);
-    color: rgba(255,255,255,0.45);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    position: relative;
-  }
-
-  .tag-before::after {
-    content: '✗';
-    position: absolute;
-    right: -4px;
-    top: -4px;
-    width: 10px;
-    height: 10px;
-    background: rgba(192,57,43,0.8);
-    color: white;
-    font-size: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-  }
-
-  .tag-after {
-    font-size: 7.5px;
-    padding: 3px 10px;
-    border: 1px solid rgba(201,168,76,0.4);
-    color: var(--gold-light);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: rgba(201,168,76,0.08);
-    position: relative;
-  }
-
-  .tag-after::after {
-    content: '✓';
-    position: absolute;
-    right: -4px;
-    top: -4px;
-    width: 10px;
-    height: 10px;
-    background: rgba(39,174,96,0.9);
-    color: white;
-    font-size: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-  }
-
-  /* ===== FINANCIALS ===== */
-  .financials-section {
-    background: rgba(0,0,0,0.2);
-  }
-
-  .financial-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 11px;
-    margin-bottom: 16px;
-  }
-
-  .financial-table thead tr {
-    background: rgba(201,168,76,0.12);
-  }
-
-  .financial-table th {
-    padding: 10px 12px;
-    font-size: 7.5px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 600;
-    text-align: right;
-    border-bottom: 1px solid rgba(201,168,76,0.2);
-  }
-
-  .financial-table th:first-child { text-align: left; }
-
-  .financial-table td {
-    padding: 9px 12px;
-    color: rgba(255,255,255,0.75);
-    text-align: right;
-    font-size: 11px;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-  }
-
-  .financial-table td:first-child {
-    text-align: left;
-    color: rgba(255,255,255,0.9);
-    font-weight: 500;
-  }
-
-  .financial-table tr.subtotal td {
-    border-top: 1px solid rgba(201,168,76,0.15);
-    color: var(--gold-light);
-    font-weight: 600;
-    padding-top: 10px;
-  }
-
-  .financial-table tr.total-row td {
-    background: rgba(201,168,76,0.1);
-    border-top: 1px solid rgba(201,168,76,0.3);
-    color: var(--white);
-    font-weight: 700;
-    font-size: 12px;
-    padding: 12px;
-  }
-
-  .financial-table tr.total-row td:first-child { color: var(--gold); }
-
-  .positive { color: var(--green-accent) !important; }
-  .highlight-gold { color: var(--gold) !important; font-weight: 600 !important; }
-
-  /* ===== EXIT STRATEGY ===== */
-  .exit-strategy {
-    background: linear-gradient(180deg, rgba(10,22,40,0) 0%, rgba(6,15,28,0.5) 100%);
-  }
-
-  .exit-scenarios {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 16px;
-  }
-
-  .exit-card {
-    border-radius: 4px;
-    padding: 16px 14px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    border: 1px solid rgba(255,255,255,0.08);
-  }
-
-  .exit-card.conservative {
-    background: linear-gradient(180deg, rgba(30,58,95,0.6) 0%, rgba(20,40,65,0.8) 100%);
-    border-color: rgba(33,150,211,0.25);
-  }
-
-  .exit-card.base {
-    background: linear-gradient(180deg, rgba(60,45,10,0.6) 0%, rgba(40,30,5,0.8) 100%);
-    border-color: rgba(201,168,76,0.4);
-    transform: scaleY(1.03);
-    box-shadow: 0 0 20px rgba(201,168,76,0.08);
-  }
-
-  .exit-card.upside {
-    background: linear-gradient(180deg, rgba(20,60,35,0.6) 0%, rgba(10,35,20,0.8) 100%);
-    border-color: rgba(39,174,96,0.3);
-  }
-
-  .exit-card-label {
-    font-size: 7.5px;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    display: block;
-  }
-
-  .exit-card.conservative .exit-card-label { color: rgba(33,150,211,0.8); }
-  .exit-card.base .exit-card-label { color: var(--gold); }
-  .exit-card.upside .exit-card-label { color: rgba(39,174,96,0.9); }
-
-  .exit-irr {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 38px;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1;
-    display: block;
-  }
-
-  .exit-irr-label {
-    font-size: 7.5px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.35);
-    margin-bottom: 12px;
-    display: block;
-    margin-top: 2px;
-  }
-
-  .exit-metric {
-    font-size: 9px;
-    color: rgba(255,255,255,0.5);
-    line-height: 1.8;
-    letter-spacing: 0.5px;
-  }
-
-  .exit-metric strong {
-    color: rgba(255,255,255,0.8);
-    font-weight: 600;
-  }
-
-  /* ===== MARKET INTELLIGENCE ===== */
-  .market-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 16px;
-  }
-
-  .market-card {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.07);
-    border-radius: 3px;
-    padding: 14px 16px;
-  }
-
-  .market-card-title {
-    font-size: 7.5px;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .market-card-title::before {
-    content: '';
-    display: block;
-    width: 16px;
-    height: 1px;
-    background: var(--gold);
-  }
-
-  .market-stat {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 7px;
-  }
-
-  .market-stat-label {
-    font-size: 9px;
-    color: rgba(255,255,255,0.5);
-  }
-
-  .market-stat-val {
-    font-size: 11px;
-    font-weight: 600;
-    color: rgba(255,255,255,0.85);
-  }
-
-  .progress-bar-wrap {
-    height: 3px;
-    background: rgba(255,255,255,0.06);
-    border-radius: 2px;
-    margin-bottom: 10px;
-    overflow: hidden;
-  }
-
-  .progress-bar-fill {
-    height: 100%;
-    border-radius: 2px;
-    background: linear-gradient(90deg, var(--gold), var(--gold-light));
-  }
-
-  .progress-bar-fill.teal-fill {
-    background: linear-gradient(90deg, var(--teal), var(--teal-bright));
-  }
-
-  .progress-bar-fill.green-fill {
-    background: linear-gradient(90deg, #1a8540, var(--green-accent));
-  }
-
-  /* ===== EXPANSION ===== */
-  .expansion-row {
-    display: flex;
-    align-items: stretch;
-    gap: 12px;
-    margin-bottom: 16px;
-  }
-
-  .expansion-arrow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 8px;
-    flex-shrink: 0;
-  }
-
-  .arrow-line {
-    width: 2px;
-    flex: 1;
-    background: linear-gradient(180deg, transparent, var(--gold), transparent);
-  }
-
-  .arrow-head {
-    font-size: 16px;
-    color: var(--gold);
-    line-height: 1;
-  }
-
-  .expansion-block {
-    flex: 1;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 3px;
-    padding: 14px 16px;
-  }
-
-  .expansion-block.highlight-block {
-    background: rgba(201,168,76,0.06);
-    border-color: rgba(201,168,76,0.25);
-  }
-
-  .exp-title {
-    font-size: 8px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.4);
-    margin-bottom: 8px;
-  }
-
-  .exp-stat {
-    display: flex;
-    justify-content: space-between;
-    font-size: 10.5px;
-    color: rgba(255,255,255,0.65);
-    margin-bottom: 5px;
-    line-height: 1.4;
-  }
-
-  .exp-stat strong { color: white; font-weight: 600; }
-  .exp-stat .gold { color: var(--gold); }
-
-  /* ===== COMPETITIVE SET ===== */
-  .comp-set {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-    margin-bottom: 16px;
-  }
-
-  .comp-card {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 3px;
-    padding: 12px 10px;
-    text-align: center;
-  }
-
-  .comp-card.subject {
-    border-color: rgba(201,168,76,0.35);
-    background: rgba(201,168,76,0.07);
-  }
-
-  .comp-name {
-    font-size: 8px;
-    color: rgba(255,255,255,0.6);
-    letter-spacing: 0.5px;
-    margin-bottom: 6px;
-    line-height: 1.3;
-  }
-
-  .comp-card.subject .comp-name {
-    color: var(--gold-light);
-  }
-
-  .comp-adr {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    color: white;
-    font-weight: 600;
-    display: block;
-  }
-
-  .comp-adr-label {
-    font-size: 7px;
-    color: rgba(255,255,255,0.3);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-
-  .comp-stars {
-    color: var(--gold);
-    font-size: 9px;
-    margin-top: 4px;
-  }
-
-  /* ===== REVIEWS ===== */
-  .reviews-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 16px;
-  }
-
-  .review-card {
-    background: rgba(255,255,255,0.03);
-    border-left: 2px solid rgba(201,168,76,0.3);
-    padding: 12px 14px;
-  }
-
-  .review-source {
-    font-size: 7.5px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .review-score {
-    background: rgba(201,168,76,0.15);
-    color: var(--gold);
-    padding: 2px 8px;
-    font-size: 10px;
-    font-weight: 700;
-    border-radius: 2px;
-  }
-
-  .review-text {
-    font-size: 9px;
-    color: rgba(255,255,255,0.55);
-    line-height: 1.6;
-    font-style: italic;
-  }
-
-  /* ===== WHY NOW ===== */
-  .why-now-list {
-    list-style: none;
-    margin-bottom: 16px;
-  }
-
-  .why-now-list li {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-  }
-
-  .why-now-list li:last-child { border-bottom: none; }
-
-  .why-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 32px;
-    color: rgba(201,168,76,0.15);
-    line-height: 1;
-    flex-shrink: 0;
-    width: 28px;
-    text-align: right;
-  }
-
-  .why-text strong {
-    font-size: 10px;
-    color: white;
-    display: block;
-    margin-bottom: 3px;
-    letter-spacing: 0.3px;
-  }
-
-  .why-text p {
-    font-size: 9px;
-    color: rgba(255,255,255,0.45);
-    line-height: 1.5;
-  }
-
-  /* ===== FOOTER CTA ===== */
-  .footer-cta {
-    background: linear-gradient(135deg, #060E1C 0%, #0D1E38 100%);
-    padding: 28px 36px 32px;
-    position: relative;
-    overflow: hidden;
-    border-top: 1px solid rgba(201,168,76,0.2);
-  }
-
-  .footer-cta::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: radial-gradient(ellipse 80% 100% at 50% 100%, rgba(201,168,76,0.07) 0%, transparent 70%);
-  }
-
-  .cta-headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 32px;
-    color: white;
-    text-align: center;
-    font-weight: 300;
-    margin-bottom: 4px;
-    position: relative;
-    z-index: 2;
-  }
-
-  .cta-sub {
-    text-align: center;
-    font-size: 9px;
-    letter-spacing: 3px;
-    color: rgba(255,255,255,0.35);
-    text-transform: uppercase;
-    margin-bottom: 24px;
-    position: relative;
-    z-index: 2;
-  }
-
-  .contact-row {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 20px;
-    align-items: center;
-    position: relative;
-    z-index: 2;
-  }
-
-  .contact-block { text-align: center; }
-
-  .contact-label {
-    font-size: 7.5px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.3);
-    margin-bottom: 5px;
-  }
-
-  .contact-val {
-    font-size: 13px;
-    color: var(--white);
-    font-weight: 500;
-    letter-spacing: 0.5px;
-  }
-
-  .contact-divider {
-    width: 1px;
-    height: 40px;
-    background: linear-gradient(180deg, transparent, rgba(201,168,76,0.3), transparent);
-  }
-
-  .cta-gold-line {
-    width: 60px;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    margin: 20px auto 0;
-    position: relative;
-    z-index: 2;
-  }
-
-  .confidential-bar {
-    background: rgba(201,168,76,0.08);
-    border-top: 1px solid rgba(201,168,76,0.1);
-    padding: 8px 36px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .confidential-text {
-    font-size: 7px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.2);
-  }
-
-  .page-num {
-    font-size: 7px;
-    color: rgba(255,255,255,0.15);
-    letter-spacing: 1px;
-  }
-
-  /* Watermark */
-  .watermark {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-35deg);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 120px;
-    color: rgba(201,168,76,0.02);
-    white-space: nowrap;
-    pointer-events: none;
-    font-weight: 700;
-    letter-spacing: 10px;
-    user-select: none;
-    z-index: 0;
-  }
-
-  /* Separator */
-  .gold-sep {
-    width: 40px;
-    height: 1px;
-    background: linear-gradient(90deg, var(--gold), transparent);
-    margin: 12px 0;
-  }
-
-  /* Signal bars for value creation */
-  .value-creation-bar {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 10px;
-  }
-
-  .vcb-label {
-    font-size: 9px;
-    color: rgba(255,255,255,0.55);
-    flex: 1;
-  }
-
-  .vcb-bars {
-    display: flex;
-    gap: 2px;
-    align-items: flex-end;
-  }
-
-  .vcb-bar {
-    width: 6px;
-    background: rgba(201,168,76,0.2);
-    border-radius: 1px;
-  }
-
-  .vcb-bar.active {
-    background: var(--gold);
-  }
-
-  .vcb-val {
-    font-size: 10px;
-    font-weight: 600;
-    color: var(--gold-light);
-    min-width: 60px;
-    text-align: right;
-  }
-
-  /* Arrow between scenarios */
-  .scenario-arrow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    padding: 0 4px;
-  }
-
-  .s-arrow {
-    font-size: 18px;
-    color: rgba(201,168,76,0.3);
-  }
-
-  .s-arrow-label {
-    font-size: 7px;
-    color: rgba(201,168,76,0.3);
-    letter-spacing: 1px;
-    writing-mode: vertical-lr;
-    text-transform: uppercase;
-  }
-
-  .badge-new {
-    display: inline-block;
-    background: var(--green-accent);
-    color: white;
-    font-size: 7px;
-    font-weight: 700;
-    padding: 2px 7px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    border-radius: 2px;
-    vertical-align: middle;
-    margin-left: 6px;
-  }
-
-  .badge-hot {
-    display: inline-block;
-    background: #E74C3C;
-    color: white;
-    font-size: 7px;
-    font-weight: 700;
-    padding: 2px 7px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    border-radius: 2px;
-    vertical-align: middle;
-    margin-left: 6px;
-  }
-
-  /* ===== TIMELINE ===== */
-  .timeline {
-    display: flex;
-    align-items: flex-start;
-    gap: 0;
-    margin-bottom: 16px;
-    position: relative;
-  }
-
-  .timeline::before {
-    content: '';
-    position: absolute;
-    top: 12px;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), rgba(201,168,76,0.3), transparent);
-    z-index: 0;
-  }
-
-  .tl-step {
-    flex: 1;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-
-  .tl-dot {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 1px solid rgba(201,168,76,0.4);
-    background: var(--navy);
-    margin: 0 auto 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 9px;
-    color: var(--gold);
-    font-weight: 700;
-  }
-
-  .tl-dot.active {
-    background: var(--gold);
-    color: var(--navy);
-    border-color: var(--gold);
-    box-shadow: 0 0 12px rgba(201,168,76,0.4);
-  }
-
-  .tl-title {
-    font-size: 8px;
-    color: white;
-    font-weight: 600;
-    margin-bottom: 3px;
-    letter-spacing: 0.3px;
-  }
-
-  .tl-date {
-    font-size: 7.5px;
-    color: rgba(255,255,255,0.3);
-    letter-spacing: 1px;
-  }
-
-  .section-bg-alt {
-    background: rgba(255,255,255,0.015);
-  }
-
-  .full-width-divider {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), rgba(201,168,76,0.2), transparent);
-    margin: 0 36px;
-  }
-
-  /* =========================================
-     MOBILE RESPONSIVE STYLES (ADDED)
-     ========================================= */
-  @media (max-width: 768px) {
-    body { padding: 0; background: var(--navy); }
-    .infographic { width: 100%; max-width: 100%; border-radius: 0; }
-
-    /* Typography Scaling for Readability on Mobile */
-    .logo-text { font-size: 24px; }
-    .logo-sub { font-size: 11px; }
-    .investment-tag { font-size: 11px; padding: 8px 16px; }
-    .property-category { font-size: 11px; }
-    .property-name { font-size: 46px; margin-top: 12px; }
-    .property-name-sub { font-size: 18px; }
-    .location-line { font-size: 12px; line-height: 1.5; align-items: flex-start; }
-    .location-dot { margin-top: 5px; }
-
-    .kpi-val { font-size: 34px; }
-    .kpi-unit { font-size: 13px; }
-    .kpi-label { font-size: 11px; }
-
-    .section { padding: 24px 20px; }
-    .section-num { font-size: 18px; }
-    .section-title { font-size: 13px; }
-
-    .snapshot-card-label { font-size: 11px; }
-    .snapshot-card-val { font-size: 32px; }
-    .snapshot-card-val span { font-size: 16px; }
-    .snapshot-card-note { font-size: 12px; line-height: 1.4; }
-
-    .asking-label { font-size: 13px; }
-    .asking-val { font-size: 46px; }
-    .discount-badge { font-size: 12px; padding: 6px 14px; }
-    .breakdown-item { font-size: 13px; margin-bottom: 4px; }
-
-    .ba-label { font-size: 12px; padding: 12px 16px; }
-    .tag-before, .tag-after { font-size: 11px; padding: 5px 12px; }
-    .upgrade-tags { padding: 12px 16px 16px; }
-
-    .vcb-label { font-size: 12px; }
-    .vcb-val { font-size: 13px; }
-
-    .financial-table th { font-size: 12px; padding: 12px; }
-    .financial-table td { font-size: 13px; padding: 12px; }
-
-    .exit-card-label { font-size: 12px; }
-    .exit-irr { font-size: 44px; }
-    .exit-irr-label { font-size: 12px; }
-    .exit-metric { font-size: 13px; line-height: 2; }
-
-    .exp-title { font-size: 13px; }
-    .exp-stat { font-size: 14px; margin-bottom: 8px; }
-
-    .market-card-title { font-size: 13px; margin-bottom: 14px; }
-    .market-stat-label { font-size: 13px; }
-    .market-stat-val { font-size: 14px; }
-
-    .comp-name { font-size: 13px; margin-bottom: 8px; }
-    .comp-adr { font-size: 28px; }
-    .comp-adr-label { font-size: 11px; margin-top: 4px; }
-    .comp-stars { font-size: 12px; }
-
-    .review-source { font-size: 13px; }
-    .review-score { font-size: 13px; padding: 4px 10px; }
-    .review-text { font-size: 14px; line-height: 1.7; }
-
-    .why-num { font-size: 46px; width: auto; margin-right: 16px; margin-top: -5px; text-align: left; }
-    .why-text strong { font-size: 15px; margin-bottom: 6px; }
-    .why-text p { font-size: 14px; line-height: 1.6; }
-
-    .tl-dot { width: 36px; height: 36px; font-size: 14px; margin: 0 20px 0 0; }
-    .tl-title { font-size: 15px; margin-bottom: 4px; }
-    .tl-date { font-size: 13px; }
-
-    .cta-headline { font-size: 38px; line-height: 1.1; margin-bottom: 12px; }
-    .cta-sub { font-size: 13px; margin-bottom: 30px; }
-    .contact-label { font-size: 12px; }
-    .contact-val { font-size: 18px; }
-    .confidential-text { font-size: 10px; line-height: 1.5; }
-    .page-num { font-size: 10px; }
-
-    /* Layout Restructuring for Vertical View */
-    .header-top-bar { flex-direction: column; align-items: flex-start; gap: 16px; padding: 24px 20px; }
-    .header-main { padding: 24px 20px 50px; }
-    .investment-tag { clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); align-self: flex-start; }
-
-    .kpi-band { grid-template-columns: 1fr 1fr; }
-    .kpi-item { padding: 20px 12px; border-bottom: 1px solid rgba(0,0,0,0.15); }
-    .kpi-item:nth-child(even) { border-right: none; }
-    .kpi-item:last-child { grid-column: 1 / -1; border-right: none; border-bottom: none; }
-
-    .snapshot-grid { grid-template-columns: 1fr; gap: 16px; }
-    .asking-price-card { flex-direction: column; align-items: flex-start; gap: 20px; padding: 24px 20px; }
-    .asking-price-card::after { display: none; }
-    .asking-breakdown { text-align: left; }
-
-    .before-after-container { grid-template-columns: 1fr; border-radius: 4px; border: none; }
-    .ba-panel.before { border-right: none; border-bottom: 2px solid var(--gold); border-radius: 4px 4px 0 0; }
-    .ba-panel.after { border-radius: 0 0 4px 4px; }
-    .hotel-visual { min-height: 280px; }
-
-    /* Table Scroll Wrapper styles */
-    .table-responsive { overflow-x: auto; width: calc(100% + 40px); margin: 0 -20px; padding: 0 20px; -webkit-overflow-scrolling: touch; }
-    .financial-table { min-width: 600px; margin-bottom: 0; }
-
-    .exit-scenarios { grid-template-columns: 1fr; gap: 16px; }
-    .exit-card.base { transform: none; box-shadow: none; border-width: 2px; }
-
-    .expansion-row { flex-direction: column; gap: 16px; }
-    .expansion-arrow { flex-direction: row; padding: 8px 0; }
-    .arrow-line { width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
-    .arrow-head { transform: rotate(90deg); margin: 0 16px; }
-    .expansion-arrow div:nth-child(3) { font-size: 12px !important; margin: 0 10px; }
-
-    .market-grid { grid-template-columns: 1fr; gap: 16px; }
-    .comp-set { grid-template-columns: 1fr 1fr; gap: 12px; }
-    .reviews-grid { grid-template-columns: 1fr; gap: 16px; }
-
-    .why-now-list li { flex-direction: column; padding: 16px 0; gap: 8px; }
-
-    .timeline { flex-direction: column; align-items: flex-start; gap: 24px; padding-left: 0; margin-top: 10px; }
-    .timeline::before { left: 17px; top: 36px; height: calc(100% - 36px); width: 2px; background: rgba(201,168,76,0.3); }
-    .tl-step { flex-direction: row; text-align: left; align-items: center; width: 100%; }
-
-    .contact-row { grid-template-columns: 1fr; gap: 24px; }
-    .contact-divider { width: 80px; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent); margin: 0 auto; }
-    .footer-cta { padding: 40px 20px; }
-    .confidential-bar { flex-direction: column; gap: 12px; padding: 16px 20px; text-align: center; }
-    .full-width-divider { margin: 0 20px; }
-
-    /* Inline style override for specific multi-column grids */
-    div[style*="grid-template-columns:1fr 1fr 1fr;"],
-    div[style*="grid-template-columns: 1fr 1fr 1fr;"] {
-      grid-template-columns: 1fr !important; gap: 12px !important;
-    }
-    div[style*="grid-template-columns:1fr 1fr;"] {
-      grid-template-columns: 1fr !important; gap: 12px !important;
-    }
-    div[style*="grid-template-columns:repeat(4,1fr);"],
-    div[style*="grid-template-columns: repeat(4, 1fr);"] {
-      grid-template-columns: 1fr 1fr !important; gap: 12px !important;
-    }
-  }
+:root {
+  --gold: #C9A84C;
+  --gold-bright: #E8C97A;
+  --gold-pale: #F5E8C8;
+  --navy: #08152A;
+  --navy-2: #0E1E38;
+  --navy-3: #162844;
+  --teal: #1A6B6B;
+  --teal-2: #25918E;
+  --slate: #7A93AD;
+  --slate-2: #A0B4C4;
+  --white: #FFFFFF;
+  --green: #3DAB72;
+  --border: rgba(201,168,76,0.18);
+  --surface: rgba(255,255,255,0.03);
+  --lime: #B8E04A;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--navy);
+  color: var(--slate-2);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes tickerScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes shimmer {
+  0%   { left: -100%; }
+  100% { left: 200%; }
+}
+@keyframes goldPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(201,168,76,0.4), 0 0 40px rgba(201,168,76,0.2); }
+  50%       { box-shadow: 0 0 30px rgba(201,168,76,0.6), 0 0 60px rgba(201,168,76,0.3); }
+}
+@keyframes dotGlow {
+  0%, 100% { box-shadow: 0 0 6px 2px rgba(201,168,76,0.5); }
+  50%       { box-shadow: 0 0 14px 5px rgba(201,168,76,0.9); }
+}
+
+.d1 { animation-delay: 0.08s; }
+.d2 { animation-delay: 0.16s; }
+.d3 { animation-delay: 0.24s; }
+.d4 { animation-delay: 0.32s; }
+
+.fade-up {
+  animation: fadeUp 0.65s ease both;
+  opacity: 0;
+}
+
+/* ── 00A MARQUEE ── */
+.marquee-strip {
+  background: var(--gold);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 7px 0;
+  position: relative;
+  cursor: default;
+}
+.marquee-strip::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60px; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+  animation: shimmer 3.5s linear infinite;
+  pointer-events: none;
+}
+.marquee-inner {
+  display: inline-flex;
+  animation: marqueeScroll 42s linear infinite;
+}
+.marquee-strip:hover .marquee-inner { animation-play-state: paused; }
+.marquee-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 10.5px;
+  letter-spacing: 2.5px;
+  color: var(--navy);
+  padding: 0 18px;
+  text-transform: uppercase;
+}
+.marquee-dot { color: var(--navy); opacity: 0.55; padding: 0 6px; }
+
+/* ── 00B HERO ── */
+.hero {
+  background: linear-gradient(135deg, #050E1F 0%, #08152A 50%, #0D1E35 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 64px 48px 56px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -120px; left: 50%;
+  transform: translateX(-50%);
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 65%);
+  pointer-events: none;
+}
+.hero-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+.hero-left { flex: 1; max-width: 700px; }
+.joe-wordmark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(17px, 2.5vw, 24px);
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: right;
+  flex-shrink: 0;
+}
+.joe-wordmark span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: var(--slate);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-top: 3px;
+}
+.brand-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.brand-badge {
+  background: rgba(201,168,76,0.12);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 4px 10px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+.brand-badge.teal { background: rgba(26,107,107,0.2); border-color: rgba(37,145,142,0.3); color: var(--teal-2); }
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 5.5vw, 58px);
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold-bright);
+}
+.hero-tagline {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: var(--slate);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+.price-strip {
+  background: rgba(14,30,56,0.85);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  overflow: hidden;
+  margin-top: 40px;
+}
+.price-cell {
+  padding: 14px 18px;
+  border-right: 1px solid var(--border);
+  position: relative;
+}
+.price-cell:last-child { border-right: none; }
+.price-cell::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+.price-cell.highlight::before { background: linear-gradient(90deg, #B8E04A, transparent); }
+.pc-label {
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.pc-value {
+  font-size: clamp(13px, 2vw, 18px);
+  font-weight: 700;
+  color: var(--gold-bright);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.1;
+}
+.pc-value.lime { color: #B8E04A; }
+.pc-value.green { color: var(--green); }
+.pc-value.white { color: var(--white); }
+
+/* ── 00C TICKER ── */
+.ticker-strip {
+  background: #050D1A;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  position: relative;
+}
+.ticker-badge {
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 0 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.ticker-fade-right {
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, #050D1A);
+  z-index: 2;
+  pointer-events: none;
+}
+.ticker-scroll-area {
+  overflow: hidden;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.ticker-inner {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: tickerScroll 55s linear infinite;
+}
+.ticker-strip:hover .ticker-inner { animation-play-state: paused; }
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 18px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--slate-2);
+  border-right: 1px solid rgba(201,168,76,0.12);
+}
+.ticker-item .ti-label { color: var(--slate); font-weight: 400; margin-right: 3px; font-size: 9px; }
+.ticker-item .ti-val { font-weight: 700; }
+.ti-gold { color: var(--gold-bright); }
+.ti-green { color: var(--green); }
+.ti-teal  { color: var(--teal-2); }
+.ti-white { color: var(--white); }
+.ti-sub { color: var(--slate); font-size: 9px; margin-left: 3px; }
+
+/* ── LAYOUT ── */
+.container { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+.section { padding: 64px 0; }
+
+/* ── SECTION HEADERS ── */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+.sh-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px;
+  color: var(--slate);
+  font-style: italic;
+}
+.sh-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: var(--gold);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.sh-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+
+/* ── CARDS ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+.card.teal::before { background: linear-gradient(90deg, var(--teal-2), transparent); }
+.card.green::before { background: linear-gradient(90deg, var(--green), transparent); }
+.card.gold-border {
+  border: 1px solid rgba(201,168,76,0.55);
+  box-shadow: 0 0 24px rgba(201,168,76,0.08);
+}
+
+/* ── 01 KPI RIBBON ── */
+.kpi-ribbon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.kpi-cell {
+  background: var(--navy-2);
+  padding: 20px 20px 16px;
+  transition: background 0.2s;
+  position: relative;
+}
+.kpi-cell::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+.kpi-cell:hover { background: var(--navy-3); }
+.kpi-label {
+  font-size: 8px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--slate);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.kpi-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.kpi-sub {
+  font-size: 10px;
+  color: var(--gold);
+  font-weight: 500;
+}
+
+/* ── 02 OVERVIEW ── */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.fact-chip-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.fact-chip {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 10px 12px;
+}
+.fc-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 4px; }
+.fc-val { font-size: 12px; font-weight: 600; color: var(--white); }
+
+.operator-callout {
+  background: rgba(201,168,76,0.07);
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 3px;
+  padding: 14px 16px;
+  margin-top: 14px;
+}
+.oc-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.oc-val { font-size: 12px; color: var(--white); font-weight: 600; }
+
+.market-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(201,168,76,0.08);
+}
+.market-stat-row:last-child { border-bottom: none; }
+.ms-label { font-size: 10px; color: var(--slate-2); }
+.ms-val { font-size: 12px; font-weight: 700; color: var(--white); }
+.ms-badge {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2px 7px;
+  border-radius: 2px;
+}
+.ms-badge.gold { background: rgba(201,168,76,0.15); color: var(--gold); }
+.ms-badge.green { background: rgba(61,171,114,0.15); color: var(--green); }
+.ms-badge.teal { background: rgba(37,145,142,0.15); color: var(--teal-2); }
+
+.sub-insight {
+  background: rgba(37,145,142,0.08);
+  border: 1px solid rgba(37,145,142,0.25);
+  border-radius: 3px;
+  padding: 14px 16px;
+  margin-top: 16px;
+}
+.si-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--teal-2); margin-bottom: 6px; }
+.si-text { font-size: 11px; color: var(--slate-2); line-height: 1.6; }
+
+/* ── 03 SCENARIOS ── */
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.scenario-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+}
+.scenario-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+.scenario-card.best {
+  border: 1px solid rgba(201,168,76,0.5);
+  box-shadow: 0 0 28px rgba(201,168,76,0.08);
+}
+.best-badge {
+  position: absolute;
+  top: 12px; right: 12px;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 7.5px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  padding: 3px 7px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.sc-name {
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.sc-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.sc-desc { font-size: 10.5px; color: var(--slate); line-height: 1.55; margin-bottom: 16px; }
+.sc-metrics { border-top: 1px solid var(--border); padding-top: 14px; }
+.sc-metric-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(201,168,76,0.05);
+}
+.sc-ml { font-size: 9.5px; color: var(--slate); }
+.sc-mv { font-size: 10px; font-weight: 700; color: var(--white); }
+.sc-mv.gold { color: var(--gold); }
+.sc-mv.green { color: var(--green); }
+.sc-mv.teal { color: var(--teal-2); }
+.risk-pill {
+  display: inline-block;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.risk-pill.low { background: rgba(61,171,114,0.15); color: var(--green); }
+.risk-pill.med { background: rgba(201,168,76,0.15); color: var(--gold); }
+.risk-pill.high { background: rgba(220,80,80,0.15); color: #E07070; }
+
+/* ── TABLES ── */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) rgba(255,255,255,0.05);
+}
+.table-scroll::-webkit-scrollbar { height: 4px; }
+.table-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.04); }
+.table-scroll::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+.swipe-hint {
+  text-align: center;
+  font-size: 9px;
+  color: var(--slate);
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  font-size: 11.5px;
+}
+thead tr {
+  background: linear-gradient(90deg, rgba(201,168,76,0.2), rgba(201,168,76,0.08));
+}
+thead th {
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 8.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+tbody tr {
+  border-bottom: 1px solid rgba(201,168,76,0.06);
+  transition: background 0.15s;
+}
+tbody tr:hover { background: rgba(201,168,76,0.035); }
+td {
+  padding: 11px 14px;
+  color: var(--slate-2);
+  vertical-align: top;
+}
+td.bold { font-weight: 700; color: var(--white); }
+td.gold { color: var(--gold-bright); font-weight: 700; }
+td.green { color: var(--green); font-weight: 700; }
+td.teal { color: var(--teal-2); font-weight: 700; }
+tfoot tr { background: rgba(201,168,76,0.08); border-top: 1px solid var(--border); }
+tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10px 14px; }
+
+/* ── TIER TAGS ── */
+.tier-tag {
+  display: inline-block;
+  font-size: 7.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2px 7px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.tier-subject { background: rgba(201,168,76,0.2); color: var(--gold); }
+.tier-upper { background: rgba(37,145,142,0.15); color: var(--teal-2); }
+.tier-luxury { background: rgba(61,171,114,0.12); color: var(--green); }
+.tier-mid { background: rgba(122,147,173,0.15); color: var(--slate-2); }
+
+/* ── 06 MARKET ── */
+.market-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(201,168,76,0.08);
+  gap: 12px;
+}
+.stat-row:last-child { border-bottom: none; }
+.stat-label { font-size: 10.5px; color: var(--slate-2); flex: 1; }
+.stat-val { font-size: 13px; font-weight: 700; color: var(--white); text-align: right; white-space: nowrap; }
+.stat-badge {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2px 6px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.sb-green { background: rgba(61,171,114,0.15); color: var(--green); }
+.sb-gold  { background: rgba(201,168,76,0.15); color: var(--gold); }
+.sb-teal  { background: rgba(37,145,142,0.15); color: var(--teal-2); }
+
+.demand-driver-list { list-style: none; }
+.demand-driver-list li {
+  display: flex;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(201,168,76,0.08);
+  align-items: flex-start;
+}
+.demand-driver-list li:last-child { border-bottom: none; }
+.dd-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gold);
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 24px;
+}
+.dd-title { font-size: 11px; font-weight: 700; color: var(--white); margin-bottom: 3px; }
+.dd-text { font-size: 10.5px; color: var(--slate); line-height: 1.5; }
+
+/* ── 07 REPLACEMENT COST ── */
+.repcost-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.cost-bar-wrap { margin-bottom: 10px; }
+.cost-bar-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.cbl-name { font-size: 10px; color: var(--slate-2); }
+.cbl-val { font-size: 10px; font-weight: 700; color: var(--white); }
+.cost-bar-track {
+  height: 10px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.cost-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 1s ease;
+}
+.cb-land { background: linear-gradient(90deg, var(--teal-2), #1A8A87); }
+.cb-const { background: linear-gradient(90deg, var(--gold), var(--gold-bright)); }
+.cb-ffoe  { background: linear-gradient(90deg, var(--green), #52C98A); }
+.cb-soft  { background: linear-gradient(90deg, #8B7DC8, #A896E0); }
+.cb-total { background: linear-gradient(90deg, #E07070, #C85050); height: 14px; border-radius: 2px; }
+.cb-ask   { background: linear-gradient(90deg, #B8E04A, #96C932); height: 14px; border-radius: 2px; }
+.green-callout {
+  background: rgba(61,171,114,0.08);
+  border: 1px solid rgba(61,171,114,0.25);
+  border-radius: 3px;
+  padding: 14px 16px;
+  margin-top: 16px;
+}
+.gc-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--green); margin-bottom: 5px; }
+.gc-text { font-size: 11px; color: var(--slate-2); line-height: 1.55; }
+
+.perkey-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 20px; }
+.perkey-table th { padding: 8px 12px; text-align: left; font-size: 8px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid var(--border); }
+.perkey-table td { padding: 8px 12px; border-bottom: 1px solid rgba(201,168,76,0.06); color: var(--slate-2); }
+.perkey-table tr:hover td { background: rgba(201,168,76,0.03); }
+.perkey-table .subject-row td { color: var(--white); font-weight: 600; }
+
+/* ── 08 PROJECTIONS ── */
+.revpar-bar-section { margin-top: 28px; }
+.rbar-row { margin-bottom: 12px; }
+.rbar-header { display: flex; justify-content: space-between; margin-bottom: 5px; }
+.rbar-label { font-size: 10px; color: var(--slate-2); }
+.rbar-val { font-size: 10px; font-weight: 700; color: var(--white); }
+.rbar-track { height: 12px; background: rgba(255,255,255,0.05); border-radius: 2px; overflow: hidden; }
+.rbar-fill { height: 100%; border-radius: 2px; }
+.rb-current { background: var(--slate); width: 38%; }
+.rb-base { background: var(--teal-2); width: 55%; }
+.rb-upside { background: var(--green); width: 75%; }
+.rb-market { background: var(--gold); width: 48%; }
+.rb-branded { background: var(--gold-bright); width: 68%; }
+.footnote { font-size: 10px; color: var(--slate); margin-top: 16px; font-style: italic; padding-top: 14px; border-top: 1px solid rgba(201,168,76,0.08); }
+
+/* ── 09 EXIT ROADMAP ── */
+.exit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.timeline { position: relative; padding-left: 28px; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 1px; background: linear-gradient(180deg, var(--gold), transparent); }
+.timeline-step { position: relative; margin-bottom: 28px; }
+.tl-dot {
+  position: absolute;
+  left: -24px;
+  top: 4px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background: var(--navy-2);
+}
+.tl-dot.final { background: var(--gold); animation: dotGlow 2s ease-in-out infinite; }
+.tl-year { font-size: 8px; letter-spacing: 2px; color: var(--gold); font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
+.tl-title { font-size: 13px; font-weight: 700; color: var(--white); margin-bottom: 5px; }
+.tl-text { font-size: 10.5px; color: var(--slate); line-height: 1.55; }
+
+.exit-value-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
+.exit-value-table th { padding: 8px 12px; font-size: 8px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); text-align: left; border-bottom: 1px solid var(--border); }
+.exit-value-table td { padding: 9px 12px; border-bottom: 1px solid rgba(201,168,76,0.06); color: var(--slate-2); }
+.exit-value-table tr:hover td { background: rgba(201,168,76,0.035); }
+.exit-value-table .ev-highlight td { color: var(--white); font-weight: 700; }
+
+.land-callout {
+  background: rgba(201,168,76,0.07);
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 3px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+.lc-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 5px; }
+.lc-text { font-size: 11px; color: var(--slate-2); line-height: 1.55; }
+
+.apac-stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(201,168,76,0.06);
+}
+.apac-stat-row:last-child { border-bottom: none; }
+.as-label { font-size: 10px; color: var(--slate); }
+.as-val { font-size: 11px; font-weight: 700; color: var(--teal-2); }
+
+/* ── 10 RISK MATRIX ── */
+.risk-cell-high { color: #E07070; font-weight: 700; }
+.risk-cell-med  { color: var(--gold); font-weight: 700; }
+.risk-cell-low  { color: var(--green); font-weight: 700; }
+
+/* ── 11 SENTIMENT ── */
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.review-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 20px;
+  position: relative;
+}
+.review-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+.review-stars { color: var(--gold); font-size: 11px; margin-bottom: 10px; letter-spacing: 2px; }
+.review-quote {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: 11.5px;
+  color: var(--slate-2);
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+.review-meta { font-size: 9px; letter-spacing: 1px; color: var(--slate); text-transform: uppercase; }
+
+.sentiment-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.sentiment-bar-row { margin-bottom: 13px; }
+.sbr-header { display: flex; justify-content: space-between; margin-bottom: 5px; }
+.sbr-label { font-size: 10px; color: var(--slate-2); }
+.sbr-score { font-size: 10px; font-weight: 700; color: var(--gold); }
+.sbr-track { height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; }
+.sbr-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-bright)); }
+
+.thesis-paragraph { font-size: 11.5px; color: var(--slate-2); line-height: 1.7; }
+.thesis-paragraph strong { color: var(--gold-bright); font-weight: 600; }
+
+/* ── 12 DEAL BOX ── */
+.deal-box {
+  background: linear-gradient(135deg, var(--navy-2), var(--navy-3));
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 56px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.deal-box::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), var(--gold-bright), var(--gold), transparent);
+}
+.deal-box::after {
+  content: '';
+  position: absolute;
+  top: -200px; left: 50%;
+  transform: translateX(-50%);
+  width: 600px; height: 500px;
+  background: radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 65%);
+  pointer-events: none;
+}
+.deal-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(20px, 3vw, 30px);
+  color: var(--gold-pale);
+  max-width: 700px;
+  margin: 0 auto 28px;
+  line-height: 1.4;
+  position: relative;
+  z-index: 1;
+}
+.deal-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(44px, 8vw, 72px);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+}
+.deal-sub { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--slate); margin-bottom: 28px; position: relative; z-index: 1; }
+.deal-divider { width: 120px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); margin: 0 auto 28px; }
+.deal-body { max-width: 760px; margin: 0 auto; position: relative; z-index: 1; }
+.deal-body p { font-size: 12px; color: var(--slate-2); line-height: 1.75; margin-bottom: 14px; }
+.deal-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 28px;
+  position: relative;
+  z-index: 1;
+}
+.deal-pill {
+  background: rgba(201,168,76,0.1);
+  border: 1px solid rgba(201,168,76,0.25);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+}
+
+/* ── 13 FOOTER ── */
+.contact-footer {
+  background: var(--navy-2);
+  border-top: 1px solid var(--border);
+  padding: 48px 0 40px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 32px;
+  align-items: center;
+}
+.cf-name { font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+.cf-title { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--slate); }
+.cf-contact-item { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
+.cf-icon { color: var(--gold); font-size: 12px; }
+.cf-link { font-size: 12px; color: var(--slate-2); text-decoration: none; }
+.cf-link:hover { color: var(--gold); }
+.cf-center { text-align: center; }
+.cf-right { text-align: right; }
+.cf-wordmark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.cf-sub { font-size: 8.5px; letter-spacing: 3px; text-transform: uppercase; color: var(--slate); }
+
+/* ── 14 DISCLAIMER ── */
+.disclaimer {
+  background: var(--navy);
+  border-top: 1px solid rgba(201,168,76,0.08);
+  padding: 24px 0;
+  text-align: center;
+}
+.disclaimer p { font-size: 9.5px; color: var(--slate); line-height: 1.7; max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+/* ── IRR SENSITIVITY TABLE ── */
+.irr-table { border-collapse: collapse; width: 100%; min-width: 500px; font-size: 11px; }
+.irr-table th { padding: 9px 12px; text-align: center; font-size: 8px; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 1px solid var(--border); }
+.irr-table th.axis-label { color: var(--gold); background: rgba(201,168,76,0.1); }
+.irr-table th.col-header { color: var(--slate-2); background: rgba(255,255,255,0.02); }
+.irr-table td { padding: 9px 12px; text-align: center; font-weight: 700; font-size: 11.5px; border: 1px solid rgba(201,168,76,0.06); }
+.irr-table .row-header { color: var(--slate-2); font-size: 10px; font-weight: 600; background: rgba(255,255,255,0.02); text-align: left; }
+.irr-cell-high   { background: rgba(61,171,114,0.25); color: #5BD18E; }
+.irr-cell-mid    { background: rgba(61,171,114,0.12); color: var(--green); }
+.irr-cell-low    { background: rgba(201,168,76,0.12); color: var(--gold); }
+.irr-cell-lowest { background: rgba(122,147,173,0.1); color: var(--slate-2); }
+
+/* ── MOBILE RESPONSIVE ── */
+@media (max-width: 900px) {
+  .kpi-ribbon { grid-template-columns: repeat(4, 1fr); }
+  .scenario-grid { grid-template-columns: repeat(2, 1fr); }
+  .price-strip { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 800px) {
+  .two-col, .market-grid, .repcost-grid, .exit-grid, .sentiment-grid { grid-template-columns: 1fr; }
+  .scenario-grid { grid-template-columns: 1fr 1fr; }
+  .contact-grid { grid-template-columns: 1fr; gap: 24px; }
+  .cf-right { text-align: left; }
+  .cf-center { text-align: left; }
+}
+@media (max-width: 700px) {
+  .hero { padding: 40px 24px 36px; }
+  .hero-layout { flex-direction: column; }
+  .joe-wordmark { text-align: left; }
+  .container { padding: 0 20px; }
+  .section { padding: 44px 0; }
+  .deal-box { padding: 40px 24px; }
+}
+@media (max-width: 500px) {
+  .kpi-ribbon { grid-template-columns: repeat(2, 1fr); }
+  .price-strip { grid-template-columns: repeat(2, 1fr); }
+  .price-cell { border-bottom: 1px solid var(--border); }
+  .scenario-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .price-strip { grid-template-columns: 1fr 1fr; }
+  .price-cell.divider { display: none; }
+}
 </style>
 </head>
 <body>
-<div class="infographic">
 
-  <div class="header">
-    <div class="header-bg"></div>
-    <div class="header-grid-lines"></div>
-
-    <div class="header-top-bar">
-      <div class="logo-badge">
-        <div class="logo-text">Joe Collection</div>
-        <div class="logo-sub">Premium Hospitality Investments</div>
-        <div class="logo-divider"></div>
-      </div>
-      <div class="investment-tag">Exclusive Investment Offering</div>
-    </div>
-
-    <div class="header-main">
-      <div class="property-category">Beachfront Resort Acquisition &bull; Pattaya, Thailand</div>
-      <div class="property-name">Garden Cliff<br><em>Resort & Spa</em></div>
-      <div class="property-name-sub">Pattaya — Chonburi</div>
-      <div class="location-line">
-        <span class="location-dot"></span>
-        220/21 Moo 5 Soi 16 Naklua, Pattaya · Freehold Tenure · North Pattaya Beachfront
-      </div>
-    </div>
-
-    <div class="diagonal-accent"></div>
+<!-- ══ 00A · MARQUEE STRIP ══ -->
+<div class="marquee-strip">
+  <div class="marquee-inner">
+    <span class="marquee-text">Garden Cliff Resort &amp; Spa Pattaya<span class="marquee-dot">·</span>249 Keys<span class="marquee-dot">·</span>Freehold Chanote<span class="marquee-dot">·</span>Asking Price ฿1,700 MB<span class="marquee-dot">·</span>฿6.83M/Key<span class="marquee-dot">·</span>Replacement Cost ฿2,850–3,450 MB<span class="marquee-dot">·</span>Target IRR 18–26%<span class="marquee-dot">·</span>MOIC 2.1–3.4×<span class="marquee-dot">·</span>Wong Amat Beachfront<span class="marquee-dot">·</span>18,228 Sqm Land<span class="marquee-dot">·</span>2 Pools · Spa · Blue Dragon Beach Club<span class="marquee-dot">·</span>Contact Joe Collection +66 80-657-8387<span class="marquee-dot">·</span>✦ Strictly Confidential · For Qualified Investors Only<span class="marquee-dot">·</span></span>
+    <span class="marquee-text">Garden Cliff Resort &amp; Spa Pattaya<span class="marquee-dot">·</span>249 Keys<span class="marquee-dot">·</span>Freehold Chanote<span class="marquee-dot">·</span>Asking Price ฿1,700 MB<span class="marquee-dot">·</span>฿6.83M/Key<span class="marquee-dot">·</span>Replacement Cost ฿2,850–3,450 MB<span class="marquee-dot">·</span>Target IRR 18–26%<span class="marquee-dot">·</span>MOIC 2.1–3.4×<span class="marquee-dot">·</span>Wong Amat Beachfront<span class="marquee-dot">·</span>18,228 Sqm Land<span class="marquee-dot">·</span>2 Pools · Spa · Blue Dragon Beach Club<span class="marquee-dot">·</span>Contact Joe Collection +66 80-657-8387<span class="marquee-dot">·</span>✦ Strictly Confidential · For Qualified Investors Only<span class="marquee-dot">·</span></span>
   </div>
+</div>
 
-  <div class="kpi-band">
-    <div class="kpi-item">
-      <span class="kpi-val">249</span>
-      <span class="kpi-unit">Keys</span>
-      <span class="kpi-label">Current Inventory</span>
+<!-- ══ 00B · HERO ══ -->
+<div class="hero">
+  <div class="hero-layout">
+    <div class="hero-left fade-up d1">
+      <div class="brand-badge-row">
+        <span class="brand-badge">Investment Memorandum</span>
+        <span class="brand-badge teal">Wong Amat Beachfront</span>
+        <span class="brand-badge">249 Keys · Freehold</span>
+      </div>
+      <h1>Garden Cliff<br><em>Resort &amp; Spa</em><br>Pattaya</h1>
+      <p class="hero-tagline">Naklua · North Pattaya · EEC Corridor · Chanote Freehold · Beachfront</p>
     </div>
-    <div class="kpi-item">
-      <span class="kpi-val">75%</span>
-      <span class="kpi-unit">OCC</span>
-      <span class="kpi-label">Occupancy Rate</span>
-    </div>
-    <div class="kpi-item">
-      <span class="kpi-val">3,000</span>
-      <span class="kpi-unit">THB</span>
-      <span class="kpi-label">Current ADR</span>
-    </div>
-    <div class="kpi-item">
-      <span class="kpi-val">8.8</span>
-      <span class="kpi-unit">/ 10</span>
-      <span class="kpi-label">Guest Score</span>
-    </div>
-    <div class="kpi-item">
-      <span class="kpi-val">18,228</span>
-      <span class="kpi-unit">sqm</span>
-      <span class="kpi-label">Land — Freehold</span>
+    <div class="joe-wordmark fade-up d2">
+      JOE<br>COLLECTION
+      <span>Hospitality Investment Advisory</span>
     </div>
   </div>
 
-  <div class="section">
-    <div class="section-header">
-      <span class="section-num">01</span>
-      <span class="section-title">Investment Snapshot</span>
-      <div class="section-line"></div>
+  <div class="price-strip fade-up d3">
+    <div class="price-cell">
+      <div class="pc-label">Asking Price</div>
+      <div class="pc-value lime">฿1,700 MB</div>
     </div>
-
-    <div class="snapshot-grid">
-      <div class="snapshot-card">
-        <div class="snapshot-card-label">Replacement Cost</div>
-        <div class="snapshot-card-val">2,850 – 3,450 <span>MB</span></div>
-        <div class="snapshot-card-note">11.4 – 13.9 MB/Key · 130k–150k THB/sqm</div>
-      </div>
-      <div class="snapshot-card">
-        <div class="snapshot-card-label">Land Value</div>
-        <div class="snapshot-card-val">1,366 <span>MB</span></div>
-        <div class="snapshot-card-note">@ 120 MB/Rai · 11-1-57 Rai Freehold</div>
-      </div>
-      <div class="snapshot-card">
-        <div class="snapshot-card-label">Total Build Cost</div>
-        <div class="snapshot-card-val">1,500 – 2,050 <span>MB</span></div>
-        <div class="snapshot-card-note">GFA 22,000 sqm · 55k–75k THB/sqm + 25% soft</div>
-      </div>
-      <div class="snapshot-card">
-        <div class="snapshot-card-label">Annual RevPAR</div>
-        <div class="snapshot-card-val">2,250 <span>THB</span></div>
-        <div class="snapshot-card-note">ADR 3,000 × OCC 75% — upside to 4,200+ post-brand</div>
-      </div>
+    <div class="price-cell">
+      <div class="pc-label">Per Key</div>
+      <div class="pc-value gold">฿6.83 M</div>
     </div>
+    <div class="price-cell">
+      <div class="pc-label">Replacement Cost</div>
+      <div class="pc-value">฿2,850–3,450 MB</div>
+    </div>
+    <div class="price-cell">
+      <div class="pc-label">Current ADR</div>
+      <div class="pc-value white">฿3,000</div>
+    </div>
+    <div class="price-cell">
+      <div class="pc-label">Target ADR</div>
+      <div class="pc-value green">฿4,800–6,200</div>
+    </div>
+    <div class="price-cell highlight">
+      <div class="pc-label">Target IRR</div>
+      <div class="pc-value lime">18–26%</div>
+    </div>
+  </div>
+</div>
 
-    <div class="asking-price-card">
-      <div>
-        <span class="asking-label">Acquisition Asking Price</span>
-        <div class="asking-val"><em>1,700</em> MB</div>
-        <div style="font-size:9px; color:rgba(255,255,255,0.4); margin-top:5px; letter-spacing:0.5px;">
-          THB 6.82 MB / Key &nbsp;·&nbsp; 77,273 THB / sqm &nbsp;·&nbsp; Freehold
-        </div>
+<!-- ══ 00C · TICKER STRIP ══ -->
+<div class="ticker-strip">
+  <div class="ticker-badge">LIVE DATA</div>
+  <div class="ticker-scroll-area">
+    <div class="ticker-inner">
+      <div class="ticker-item"><span class="ti-label">Asking Price</span><span class="ti-val ti-gold">฿1,700 MB</span><span class="ti-sub">[฿6.83M/Key]</span></div>
+      <div class="ticker-item"><span class="ti-label">Current ADR</span><span class="ti-val ti-white">฿3,000</span><span class="ti-sub">[→ ฿5,500 Target]</span></div>
+      <div class="ticker-item"><span class="ti-label">Occupancy</span><span class="ti-val ti-white">75%</span><span class="ti-sub">[→ 83% Target]</span></div>
+      <div class="ticker-item"><span class="ti-label">RevPAR</span><span class="ti-val ti-white">฿2,250</span><span class="ti-sub">[→ ฿4,565 Upside]</span></div>
+      <div class="ticker-item"><span class="ti-label">Target IRR</span><span class="ti-val ti-green">18–26%</span></div>
+      <div class="ticker-item"><span class="ti-label">MOIC</span><span class="ti-val ti-green">2.1–3.4×</span></div>
+      <div class="ticker-item"><span class="ti-label">ROIC Stabilised</span><span class="ti-val ti-teal">11–16%</span></div>
+      <div class="ticker-item"><span class="ti-label">Keys</span><span class="ti-val ti-white">249</span><span class="ti-sub">[8 Storeys]</span></div>
+      <div class="ticker-item"><span class="ti-label">GFA</span><span class="ti-val ti-white">22,000 sqm</span></div>
+      <div class="ticker-item"><span class="ti-label">Land</span><span class="ti-val ti-white">11-1-57 Rai</span><span class="ti-sub">[Freehold]</span></div>
+      <div class="ticker-item"><span class="ti-label">Replacement Cost</span><span class="ti-val ti-gold">฿2,850–3,450 MB</span></div>
+      <div class="ticker-item"><span class="ti-label">GOP Upside</span><span class="ti-val ti-green">฿330 MB</span><span class="ti-sub">[40% Margin]</span></div>
+      <div class="ticker-item"><span class="ti-label">NOI Upside</span><span class="ti-val ti-green">฿272 MB</span></div>
+      <div class="ticker-item"><span class="ti-label">Market ADR</span><span class="ti-val ti-green">+8.5% YoY</span></div>
+      <div class="ticker-item"><span class="ti-label">Sub-Market Growth</span><span class="ti-val ti-green">+32% vs 2019</span><span class="ti-sub">[#1 North Pattaya]</span></div>
+      <div class="ticker-item"><span class="ti-label">Market OCC</span><span class="ti-val ti-teal">71.0%</span><span class="ti-sub">[+4.2pp YoY]</span></div>
+      <div class="ticker-item"><span class="ti-label">U-Tapao Pax</span><span class="ti-val ti-teal">3M+</span><span class="ti-sub">[→ 60M by 2046]</span></div>
+      <div class="ticker-item"><span class="ti-label">F&amp;B Outlets</span><span class="ti-val ti-white">3</span><span class="ti-sub">[2 Pools · Spa · Beach Club]</span></div>
+      <div class="ticker-item"><span class="ti-label">Expansion Potential</span><span class="ti-val ti-white">249→320 Keys</span></div>
+      <div class="ticker-item"><span class="ti-label">Exit Horizon</span><span class="ti-val ti-gold">Yr 5–7</span><span class="ti-sub">[12–16× EBITDA]</span></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="ticker-item"><span class="ti-label">Asking Price</span><span class="ti-val ti-gold">฿1,700 MB</span><span class="ti-sub">[฿6.83M/Key]</span></div>
+      <div class="ticker-item"><span class="ti-label">Current ADR</span><span class="ti-val ti-white">฿3,000</span><span class="ti-sub">[→ ฿5,500 Target]</span></div>
+      <div class="ticker-item"><span class="ti-label">Occupancy</span><span class="ti-val ti-white">75%</span><span class="ti-sub">[→ 83% Target]</span></div>
+      <div class="ticker-item"><span class="ti-label">RevPAR</span><span class="ti-val ti-white">฿2,250</span><span class="ti-sub">[→ ฿4,565 Upside]</span></div>
+      <div class="ticker-item"><span class="ti-label">Target IRR</span><span class="ti-val ti-green">18–26%</span></div>
+      <div class="ticker-item"><span class="ti-label">MOIC</span><span class="ti-val ti-green">2.1–3.4×</span></div>
+      <div class="ticker-item"><span class="ti-label">ROIC Stabilised</span><span class="ti-val ti-teal">11–16%</span></div>
+      <div class="ticker-item"><span class="ti-label">Keys</span><span class="ti-val ti-white">249</span><span class="ti-sub">[8 Storeys]</span></div>
+      <div class="ticker-item"><span class="ti-label">GFA</span><span class="ti-val ti-white">22,000 sqm</span></div>
+      <div class="ticker-item"><span class="ti-label">Land</span><span class="ti-val ti-white">11-1-57 Rai</span><span class="ti-sub">[Freehold]</span></div>
+      <div class="ticker-item"><span class="ti-label">Replacement Cost</span><span class="ti-val ti-gold">฿2,850–3,450 MB</span></div>
+      <div class="ticker-item"><span class="ti-label">GOP Upside</span><span class="ti-val ti-green">฿330 MB</span><span class="ti-sub">[40% Margin]</span></div>
+      <div class="ticker-item"><span class="ti-label">NOI Upside</span><span class="ti-val ti-green">฿272 MB</span></div>
+      <div class="ticker-item"><span class="ti-label">Market ADR</span><span class="ti-val ti-green">+8.5% YoY</span></div>
+      <div class="ticker-item"><span class="ti-label">Sub-Market Growth</span><span class="ti-val ti-green">+32% vs 2019</span><span class="ti-sub">[#1 North Pattaya]</span></div>
+      <div class="ticker-item"><span class="ti-label">Market OCC</span><span class="ti-val ti-teal">71.0%</span><span class="ti-sub">[+4.2pp YoY]</span></div>
+      <div class="ticker-item"><span class="ti-label">U-Tapao Pax</span><span class="ti-val ti-teal">3M+</span><span class="ti-sub">[→ 60M by 2046]</span></div>
+      <div class="ticker-item"><span class="ti-label">F&amp;B Outlets</span><span class="ti-val ti-white">3</span><span class="ti-sub">[2 Pools · Spa · Beach Club]</span></div>
+      <div class="ticker-item"><span class="ti-label">Expansion Potential</span><span class="ti-val ti-white">249→320 Keys</span></div>
+      <div class="ticker-item"><span class="ti-label">Exit Horizon</span><span class="ti-val ti-gold">Yr 5–7</span><span class="ti-sub">[12–16× EBITDA]</span></div>
+    </div>
+  </div>
+  <div class="ticker-fade-right"></div>
+</div>
+
+<!-- ══ 01 · PROPERTY AT A GLANCE ══ -->
+<div class="section" style="padding-bottom: 0;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="sh-num">01</span>
+      <span class="sh-title">Property at a Glance</span>
+      <div class="sh-line"></div>
+    </div>
+    <div class="kpi-ribbon fade-up d1">
+      <div class="kpi-cell">
+        <div class="kpi-label">Total Keys</div>
+        <div class="kpi-value">249</div>
+        <div class="kpi-sub">8 Storeys</div>
       </div>
-      <div class="asking-breakdown">
-        <div class="discount-badge">▼ 40–51% BELOW REPLACEMENT COST</div>
-        <div class="breakdown-item">Replacement Cost: <strong>2,850 – 3,450 MB</strong></div>
-        <div class="breakdown-item">Discount to Replacement: <strong style="color:#27AE60;">1,150 – 1,750 MB</strong></div>
-        <div class="breakdown-item">Cost per Key vs Market: <strong>6.82 MB vs 11.4–13.9 MB</strong></div>
+      <div class="kpi-cell">
+        <div class="kpi-label">Total GFA</div>
+        <div class="kpi-value">22K</div>
+        <div class="kpi-sub">Sqm · FAR 1.2</div>
+      </div>
+      <div class="kpi-cell">
+        <div class="kpi-label">Land · Tenure</div>
+        <div class="kpi-value">11.5</div>
+        <div class="kpi-sub">Rai · Freehold Chanote</div>
+      </div>
+      <div class="kpi-cell">
+        <div class="kpi-label">Current OCC</div>
+        <div class="kpi-value">75%</div>
+        <div class="kpi-sub">Above Market Avg</div>
+      </div>
+      <div class="kpi-cell">
+        <div class="kpi-label">Current ADR</div>
+        <div class="kpi-value">฿3K</div>
+        <div class="kpi-sub">RevPAR ฿2,250</div>
+      </div>
+      <div class="kpi-cell">
+        <div class="kpi-label">F&amp;B Outlets</div>
+        <div class="kpi-value">3</div>
+        <div class="kpi-sub">+ Beach Club · 2 Bars</div>
+      </div>
+      <div class="kpi-cell">
+        <div class="kpi-label">Sub-Market Rank</div>
+        <div class="kpi-value">#1</div>
+        <div class="kpi-sub">Wong Amat Beachfront</div>
+      </div>
+      <div class="kpi-cell">
+        <div class="kpi-label">ADR Gap vs Comp</div>
+        <div class="kpi-value">+60%</div>
+        <div class="kpi-sub">Upside to Branded Rate</div>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="section section-bg-alt">
-    <div class="section-header">
-      <span class="section-num">02</span>
-      <span class="section-title">Repositioning Vision — Before &amp; After</span>
-      <div class="section-line"></div>
+<!-- ══ 02 · ASSET OVERVIEW & LOCATION ══ -->
+<div class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="sh-num">02</span>
+      <span class="sh-title">Asset Overview &amp; Location Intelligence</span>
+      <div class="sh-line"></div>
     </div>
-
-    <div class="before-after-container">
-
-      <div class="ba-panel before">
-        <div class="ba-label">◀ Before — Current State</div>
-        <div class="hotel-visual hotel-before">
-          <div class="sky-before">
-            <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.4" viewBox="0 0 200 80">
-              <circle cx="30" cy="15" r="1" fill="white"/>
-              <circle cx="60" cy="8" r="0.7" fill="white"/>
-              <circle cx="80" cy="20" r="0.5" fill="white"/>
-              <circle cx="120" cy="12" r="0.8" fill="white"/>
-              <circle cx="150" cy="6" r="0.6" fill="white"/>
-              <circle cx="170" cy="18" r="0.4" fill="white"/>
-              <circle cx="190" cy="10" r="0.7" fill="white"/>
-              <circle cx="10" cy="25" r="0.5" fill="white"/>
-              <circle cx="45" cy="30" r="0.4" fill="white"/>
-              <circle cx="100" cy="25" r="0.6" fill="white"/>
-            </svg>
+    <div class="two-col fade-up d1">
+      <div class="card">
+        <div class="fact-chip-grid">
+          <div class="fact-chip">
+            <div class="fc-label">Brand / Status</div>
+            <div class="fc-val">Independent Resort</div>
           </div>
-          <div class="building-before" style="border-radius:0;">
-            <div class="roof-before"></div>
-            <div class="windows-grid">
-              <div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-dark"></div>
-              <div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div>
-              <div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-dark"></div>
-              <div class="win win-dark"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div>
-              <div class="win win-lit"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-dark"></div>
-              <div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div><div class="win win-lit"></div><div class="win win-dark"></div><div class="win win-lit"></div>
-            </div>
+          <div class="fact-chip">
+            <div class="fc-label">Address</div>
+            <div class="fc-val">220/21 Moo 5, Soi 16 Naklua, Pattaya</div>
           </div>
-          <div class="pool-before"></div>
-          <div class="ground-before"></div>
-          <div class="sea-before">
-            <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.3" viewBox="0 0 200 40">
-              <path d="M0 10 Q25 5 50 12 Q75 18 100 10 Q125 3 150 12 Q175 18 200 10" fill="none" stroke="rgba(33,150,211,0.5)" stroke-width="1"/>
-              <path d="M0 20 Q25 15 50 22 Q75 28 100 20 Q125 13 150 22 Q175 28 200 20" fill="none" stroke="rgba(33,150,211,0.3)" stroke-width="1"/>
-            </svg>
+          <div class="fact-chip">
+            <div class="fc-label">Built / Established</div>
+            <div class="fc-val">Operating · Active Asset</div>
+          </div>
+          <div class="fact-chip">
+            <div class="fc-label">Total GFA</div>
+            <div class="fc-val">22,000 Sqm · FAR 1.2</div>
+          </div>
+          <div class="fact-chip">
+            <div class="fc-label">Land Size</div>
+            <div class="fc-val">11-1-57 Rai (18,228 Sqm)</div>
+          </div>
+          <div class="fact-chip">
+            <div class="fc-label">Pools</div>
+            <div class="fc-val">2 Outdoor Pools + Swim-Up Bar</div>
+          </div>
+          <div class="fact-chip">
+            <div class="fc-label">F&amp;B Outlets</div>
+            <div class="fc-val">3 Restaurants + Blue Dragon Beach Club</div>
+          </div>
+          <div class="fact-chip">
+            <div class="fc-label">Spa / Facilities</div>
+            <div class="fc-val">Jin Spa · Fitness · Adventure Desk</div>
           </div>
         </div>
-        <div class="upgrade-tags" style="min-height:72px;">
-          <div class="tag-before">No Brand Flag</div>
-          <div class="tag-before">Dated FF&amp;E</div>
-          <div class="tag-before">Basic Amenities</div>
-          <div class="tag-before">Low ADR Ceiling</div>
-          <div class="tag-before">Underutilized FAR</div>
+        <div class="operator-callout">
+          <div class="oc-label">BOH:FOH Split</div>
+          <div class="oc-val">45:55 — Guest-First Floor Plate · High Revenue Efficiency</div>
+        </div>
+        <div style="margin-top: 14px; padding: 14px; background: rgba(37,145,142,0.06); border: 1px solid rgba(37,145,142,0.2); border-radius: 3px;">
+          <div style="font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--teal-2); margin-bottom: 6px;">Expansion Potential</div>
+          <div style="font-size: 11.5px; color: var(--slate-2); line-height: 1.6;">FAR uplift 1.2 → 1.5 unlocks +5,300 Sqm GFA. Add 70 keys (249 → 320). CapEx ≈ ฿375 MB generating ≈ ฿20 MB incremental revenue/year. GDV uplift ≈ ฿250 MB.</div>
         </div>
       </div>
 
-      <div class="ba-panel after">
-        <div class="ba-label">▶ After — Repositioned &amp; Branded</div>
-        <div class="hotel-visual hotel-after">
-          <div class="sky-after">
-            <svg style="position:absolute;inset:0;width:100%;height:100%;" viewBox="0 0 200 80">
-              <circle cx="30" cy="12" r="1.2" fill="white" opacity="0.9"/>
-              <circle cx="60" cy="6" r="0.8" fill="white" opacity="0.8"/>
-              <circle cx="80" cy="18" r="0.5" fill="white" opacity="0.7"/>
-              <circle cx="115" cy="10" r="1" fill="white" opacity="0.9"/>
-              <circle cx="145" cy="5" r="0.7" fill="white" opacity="0.8"/>
-              <circle cx="168" cy="16" r="0.5" fill="white" opacity="0.6"/>
-              <circle cx="185" cy="8" r="0.8" fill="white" opacity="0.9"/>
-              <circle cx="12" cy="22" r="0.5" fill="white" opacity="0.6"/>
-              <circle cx="48" cy="28" r="0.4" fill="white" opacity="0.7"/>
-              <circle cx="98" cy="22" r="0.7" fill="white" opacity="0.8"/>
-              <circle cx="130" cy="30" r="0.5" fill="white" opacity="0.5"/>
-              <circle cx="175" cy="15" r="8" fill="rgba(255,240,180,0.08)"/>
-              <circle cx="175" cy="15" r="5" fill="rgba(255,240,180,0.12)"/>
-              <circle cx="175" cy="15" r="3" fill="rgba(255,240,180,0.2)"/>
-            </svg>
-          </div>
-          <div class="brand-crown">
-            <div class="brand-crown-line"></div>
-            <div class="brand-crown-text">★ Cliff Grand Pattaya ★</div>
-            <div class="brand-crown-line"></div>
-          </div>
-          <div class="building-after-main">
-            <div class="roof-after"></div>
-            <div class="windows-luxury">
-              <div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div>
-              <div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div>
-              <div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div>
-              <div class="win-luxury"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div>
-              <div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div>
-              <div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div><div class="win-luxury win-luxury-lit"></div>
-            </div>
-          </div>
-          <div class="amenity-dots">
-            <div class="amenity-dot"></div>
-            <div class="amenity-dot teal"></div>
-            <div class="amenity-dot"></div>
-            <div class="amenity-dot teal"></div>
-            <div class="amenity-dot"></div>
-          </div>
-          <div class="pool-after">
-            <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 100 10">
-              <defs><linearGradient id="pg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="rgba(33,200,255,0)"/><stop offset="50%" stop-color="rgba(33,200,255,0.4)"/><stop offset="100%" stop-color="rgba(33,200,255,0)"/></linearGradient></defs>
-              <rect width="100" height="10" fill="url(#pg)"/>
-              <path d="M0 3 Q25 1 50 3 Q75 5 100 3" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
-            </svg>
-          </div>
-          <div class="ground-after"></div>
-          <div class="sea-after">
-            <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.5" viewBox="0 0 200 40">
-              <path d="M0 8 Q25 3 50 10 Q75 16 100 8 Q125 1 150 10 Q175 16 200 8" fill="none" stroke="rgba(33,150,211,0.8)" stroke-width="1.2"/>
-              <path d="M0 18 Q25 13 50 20 Q75 26 100 18 Q125 11 150 20 Q175 26 200 18" fill="none" stroke="rgba(33,150,211,0.5)" stroke-width="0.8"/>
-            </svg>
-          </div>
-          <div style="position:absolute;bottom:30%;left:10%;width:80%;height:4px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.5),transparent);"></div>
+      <div class="card teal">
+        <div class="market-stat-row">
+          <span class="ms-label">Nearest Branded Comp</span>
+          <span class="ms-val">Centara Grand Mirage<span class="ms-badge teal" style="margin-left: 8px;">5★</span></span>
         </div>
-        <div class="upgrade-tags" style="min-height:72px;">
-          <div class="tag-after">International Flag</div>
-          <div class="tag-after">Luxury FF&amp;E</div>
-          <div class="tag-after">Wellness + MICE</div>
-          <div class="tag-after">ADR 5,500+ THB</div>
-          <div class="tag-after">+70 Keys Expansion</div>
+        <div class="market-stat-row">
+          <span class="ms-label">Branded Neighbour ADR Est.</span>
+          <span class="ms-val">฿5,200–฿7,800<span class="ms-badge green" style="margin-left: 8px;">+73–160%</span></span>
         </div>
-      </div>
-    </div>
-
-    <div style="background:rgba(0,0,0,0.2);border:1px solid rgba(201,168,76,0.12);border-radius:4px;padding:16px 20px;">
-      <div style="font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">ADR Repositioning Trajectory</div>
-      <div class="value-creation-bar">
-        <span class="vcb-label">Current ADR (Unbranded)</span>
-        <div class="vcb-bars">
-          <div class="vcb-bar active" style="height:8px"></div>
-          <div class="vcb-bar active" style="height:10px"></div>
-          <div class="vcb-bar active" style="height:7px"></div>
-          <div class="vcb-bar" style="height:9px"></div>
-          <div class="vcb-bar" style="height:11px"></div>
-          <div class="vcb-bar" style="height:8px"></div>
+        <div class="market-stat-row">
+          <span class="ms-label">Suvarnabhumi Airport</span>
+          <span class="ms-val">90 Min Drive</span>
         </div>
-        <span class="vcb-val">3,000 THB</span>
-      </div>
-      <div class="value-creation-bar">
-        <span class="vcb-label">Post-Renovation (Year 2–3)</span>
-        <div class="vcb-bars">
-          <div class="vcb-bar active" style="height:8px"></div>
-          <div class="vcb-bar active" style="height:11px"></div>
-          <div class="vcb-bar active" style="height:9px"></div>
-          <div class="vcb-bar active" style="height:12px"></div>
-          <div class="vcb-bar active" style="height:10px"></div>
-          <div class="vcb-bar" style="height:8px"></div>
+        <div class="market-stat-row">
+          <span class="ms-label">U-Tapao Airport</span>
+          <span class="ms-val">30 km · 35 Min Drive</span>
         </div>
-        <span class="vcb-val">4,200 THB</span>
-      </div>
-      <div class="value-creation-bar">
-        <span class="vcb-label">Branded Luxury (Stabilized Year 5)</span>
-        <div class="vcb-bars">
-          <div class="vcb-bar active" style="height:8px;background:var(--gold)"></div>
-          <div class="vcb-bar active" style="height:11px;background:var(--gold)"></div>
-          <div class="vcb-bar active" style="height:9px;background:var(--gold)"></div>
-          <div class="vcb-bar active" style="height:12px;background:var(--gold)"></div>
-          <div class="vcb-bar active" style="height:10px;background:var(--gold)"></div>
-          <div class="vcb-bar active" style="height:14px;background:var(--gold)"></div>
+        <div class="market-stat-row">
+          <span class="ms-label">Pattaya Hotel Market Size</span>
+          <span class="ms-val">31,581 Keys / 141 Hotels</span>
         </div>
-        <span class="vcb-val" style="color:var(--gold);">5,500 THB</span>
+        <div class="market-stat-row">
+          <span class="ms-label">2024 Market ADR</span>
+          <span class="ms-val">฿3,498 <span class="ms-badge green" style="margin-left: 8px;">+8.5% YoY</span></span>
+        </div>
+        <div class="sub-insight">
+          <div class="si-label">North Pattaya / Wong Amat Premium</div>
+          <div class="si-text">The Wong Amat–Naklua beachfront corridor commands a 45–65% ADR premium vs. the broader Pattaya market, driven by direct beach access, proximity to premium resorts (Centara Grand, Pullman, Cape Dara), and high-spend Indian/Middle Eastern leisure demand. Garden Cliff is the only independent beachfront resort of 200+ keys in this corridor — a structural rarity.</div>
+        </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="section financials-section">
-    <div class="section-header">
-      <span class="section-num">03</span>
-      <span class="section-title">Financial Model — Current vs. Repositioned</span>
-      <div class="section-line"></div>
+<!-- Hero images -->
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3px; margin-bottom: 0;">
+  <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Beachfront pool" style="width:100%; height: 200px; object-fit: cover;">
+  <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Beachfront pool" style="width:100%; height: 200px; object-fit: cover;">
+  <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80" alt="Hotel room" style="width:100%; height: 200px; object-fit: cover;">
+</div>
+
+<!-- ══ 03 · INVESTMENT SCENARIOS ══ -->
+<div class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="sh-num">03</span>
+      <span class="sh-title">Development &amp; Investment Scenarios</span>
+      <div class="sh-line"></div>
     </div>
+    <div class="scenario-grid fade-up d1">
 
-    <div class="table-responsive">
-      <table class="financial-table">
+      <!-- Scenario A: Hold & Optimise -->
+      <div class="scenario-card">
+        <div class="sc-name">Scenario A</div>
+        <div class="sc-title">Hold &amp; Optimise</div>
+        <div class="sc-desc">Revenue management, OTA repositioning, F&B activation. Minimal CapEx. Extract value from existing asset.</div>
+        <div class="sc-metrics">
+          <div class="sc-metric-row"><span class="sc-ml">CapEx Required</span><span class="sc-mv">฿50–80 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Target ADR (Yr 3)</span><span class="sc-mv gold">฿4,200</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Target OCC</span><span class="sc-mv">78%</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Total Revenue (Yr 3)</span><span class="sc-mv">฿505 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">GOP Margin</span><span class="sc-mv">34%</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">NOI</span><span class="sc-mv">฿140 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">GDV / Exit Value</span><span class="sc-mv gold">฿2,100–2,400 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">MOIC</span><span class="sc-mv gold">1.8–2.1×</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Project IRR</span><span class="sc-mv green">14–18%</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Payback Period</span><span class="sc-mv">5–6 Years</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Risk Level</span><span class="sc-mv"><span class="risk-pill low">Low</span></span></div>
+        </div>
+      </div>
+
+      <!-- Scenario B: Rebrand + Renovate -->
+      <div class="scenario-card best">
+        <div class="best-badge">★ BEST SCENARIO</div>
+        <div class="sc-name">Scenario B</div>
+        <div class="sc-title">Brand Affiliation + Full Reno</div>
+        <div class="sc-desc">Affiliate with IHG, Marriott or Wyndham upper-upscale brand. Full FF&amp;E renovation + public area upgrade. Premium rate repositioning.</div>
+        <div class="sc-metrics">
+          <div class="sc-metric-row"><span class="sc-ml">CapEx Required</span><span class="sc-mv">฿180–250 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Target ADR (Yr 3)</span><span class="sc-mv gold">฿5,500</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Target OCC</span><span class="sc-mv">80%</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Total Revenue (Yr 3)</span><span class="sc-mv">฿680 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">GOP Margin</span><span class="sc-mv">40%</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">NOI</span><span class="sc-mv">฿221 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">GDV / Exit Value</span><span class="sc-mv gold">฿3,200–3,700 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">MOIC</span><span class="sc-mv green">2.5–3.1×</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Project IRR</span><span class="sc-mv green">21–26%</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Payback Period</span><span class="sc-mv">4–5 Years</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Risk Level</span><span class="sc-mv"><span class="risk-pill med">Medium</span></span></div>
+        </div>
+      </div>
+
+      <!-- Scenario C: Expansion + Rebrand -->
+      <div class="scenario-card">
+        <div class="sc-name">Scenario C</div>
+        <div class="sc-title">Expansion to 320 Keys</div>
+        <div class="sc-desc">FAR uplift 1.2 → 1.5. Add 70 new keys. Full rebrand to premium 4★+. Maximise operational scale and ADR compression.</div>
+        <div class="sc-metrics">
+          <div class="sc-metric-row"><span class="sc-ml">CapEx Required</span><span class="sc-mv">฿550–650 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Target ADR (Yr 5)</span><span class="sc-mv gold">฿5,800</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Target OCC</span><span class="sc-mv">82%</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Total Revenue (Yr 5)</span><span class="sc-mv">฿868 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">GOP Margin</span><span class="sc-mv">41%</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">NOI</span><span class="sc-mv">฿289 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">GDV / Exit Value</span><span class="sc-mv gold">฿4,100–4,800 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">MOIC</span><span class="sc-mv green">2.8–3.4×</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Project IRR</span><span class="sc-mv green">19–24%</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Payback Period</span><span class="sc-mv">5–7 Years</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Risk Level</span><span class="sc-mv"><span class="risk-pill med">Medium-High</span></span></div>
+        </div>
+      </div>
+
+      <!-- Scenario D: Land Bank / Mixed Use -->
+      <div class="scenario-card">
+        <div class="sc-name">Scenario D</div>
+        <div class="sc-title">Land Bank / Mixed-Use</div>
+        <div class="sc-desc">Retain operating hotel. Develop ancillary beachfront units (branded residences / serviced apartments) on underutilised plot portion.</div>
+        <div class="sc-metrics">
+          <div class="sc-metric-row"><span class="sc-ml">CapEx Required</span><span class="sc-mv">฿800 MB+</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Residential GDV</span><span class="sc-mv gold">฿1,200–1,800 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Hotel Revenue (Yr 5)</span><span class="sc-mv">฿680 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Combined NOI</span><span class="sc-mv">฿350–420 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Total Asset GDV</span><span class="sc-mv gold">฿5,000–6,200 MB</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">MOIC</span><span class="sc-mv green">3.0–3.6×</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Project IRR</span><span class="sc-mv green">18–23%</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Payback Period</span><span class="sc-mv">6–8 Years</span></div>
+          <div class="sc-metric-row"><span class="sc-ml">Risk Level</span><span class="sc-mv"><span class="risk-pill high">High</span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 04 · FINANCIAL MODEL TABLE ══ -->
+<div class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="sh-num">04</span>
+      <span class="sh-title">Financial Model — Scenario Comparison</span>
+      <div class="sh-line"></div>
+    </div>
+    <p class="swipe-hint">← Swipe to scroll →</p>
+    <div class="table-scroll fade-up d1">
+      <table>
         <thead>
           <tr>
-            <th style="width:38%">Metric</th>
-            <th>Current</th>
-            <th>Post-Reno</th>
-            <th>Branded Exit</th>
+            <th>Metric</th>
+            <th>Scenario A · Hold</th>
+            <th>Scenario B · Rebrand ★</th>
+            <th>Scenario C · Expand</th>
+            <th>Scenario D · Mixed Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="bold">Keys</td><td>249</td><td>249</td><td>320</td><td>249 + Resi</td></tr>
+          <tr><td class="bold">CapEx (MB)</td><td>฿50–80</td><td class="gold">฿180–250</td><td>฿550–650</td><td>฿800+</td></tr>
+          <tr><td class="bold">Total Investment (MB)</td><td>฿1,750–1,780</td><td class="gold">฿1,880–1,950</td><td>฿2,250–2,350</td><td>฿2,500+</td></tr>
+          <tr><td class="bold">Target ADR</td><td>฿4,200</td><td class="gold">฿5,500</td><td>฿5,800</td><td>฿5,500</td></tr>
+          <tr><td class="bold">Target OCC</td><td>78%</td><td class="gold">80%</td><td>82%</td><td>80%</td></tr>
+          <tr><td class="bold">RevPAR</td><td>฿3,276</td><td class="gold">฿4,400</td><td>฿4,756</td><td>฿4,400</td></tr>
+          <tr><td class="bold">Room Revenue (MB)</td><td>฿297</td><td class="gold">฿400</td><td>฿556</td><td>฿400</td></tr>
+          <tr><td class="bold">Total Revenue (MB)</td><td>฿505</td><td class="gold">฿680</td><td>฿868</td><td>฿680</td></tr>
+          <tr><td class="bold">GOP Margin</td><td>34%</td><td class="gold">40%</td><td>41%</td><td>40%</td></tr>
+          <tr><td class="bold">GOP (MB)</td><td>฿172</td><td class="gold">฿272</td><td>฿356</td><td>฿272</td></tr>
+          <tr><td class="bold">NOI (MB)</td><td>฿140</td><td class="gold">฿221</td><td>฿289</td><td>฿220+</td></tr>
+          <tr><td class="bold">Exit GDV (MB)</td><td>฿2,100–2,400</td><td class="gold">฿3,200–3,700</td><td>฿4,100–4,800</td><td>฿5,000–6,200</td></tr>
+          <tr><td class="bold">MOIC</td><td>1.8–2.1×</td><td class="green">2.5–3.1×</td><td>2.8–3.4×</td><td>3.0–3.6×</td></tr>
+          <tr><td class="bold">Project IRR</td><td>14–18%</td><td class="green">21–26%</td><td>19–24%</td><td>18–23%</td></tr>
+          <tr><td class="bold">ROIC Stabilised</td><td>8–9%</td><td class="teal">11–13%</td><td>12–14%</td><td>13–16%</td></tr>
+          <tr><td class="bold">Exit Year</td><td>Yr 5–6</td><td class="gold">Yr 5</td><td>Yr 6–7</td><td>Yr 7–8</td></tr>
+          <tr><td class="bold">Execution Risk</td><td><span class="risk-pill low">Low</span></td><td><span class="risk-pill med">Medium</span></td><td><span class="risk-pill med">Med-High</span></td><td><span class="risk-pill high">High</span></td></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Verdict</td>
+            <td>Safe floor — immediate yield with modest upside</td>
+            <td>★ Optimal risk-adjusted return. Best-in-class IRR with proven execution path.</td>
+            <td>Maximum scale — preferred for institutional/fund buyers</td>
+            <td>Long-horizon play for developer-investors</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <p class="footnote">All figures are estimates based on market data, comparable transactions, and C9 Hotelworks / CBRE Pattaya research (2024–2025). Revenue assumes stabilised operations at Year 3 (Scenarios A/B) or Year 5 (Scenarios C/D). GOP margins benchmarked against Thai upper-upscale resort operating data. Exit multiples based on JLL/Colliers Thailand hotel transaction data 2024–2025 (12–16× NOI / 8–10% cap rate range).</p>
+
+    <!-- IRR SENSITIVITY TABLE -->
+    <div style="margin-top: 36px;">
+      <div style="font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; font-weight: 700;">IRR Sensitivity Matrix — Scenario B (Rebrand) · Exit Year × EBITDA Multiple</div>
+      <div class="table-scroll">
+        <table class="irr-table">
+          <thead>
+            <tr>
+              <th class="axis-label">Exit Year ↓ / EBITDA Multiple →</th>
+              <th class="col-header">10× EBITDA</th>
+              <th class="col-header">12× EBITDA</th>
+              <th class="col-header">14× EBITDA</th>
+              <th class="col-header">16× EBITDA</th>
+              <th class="col-header">18× EBITDA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-header">Year 3</td>
+              <td class="irr-cell-low">16%</td>
+              <td class="irr-cell-mid">19%</td>
+              <td class="irr-cell-mid">22%</td>
+              <td class="irr-cell-high">25%</td>
+              <td class="irr-cell-high">28%</td>
+            </tr>
+            <tr>
+              <td class="row-header">Year 4</td>
+              <td class="irr-cell-low">15%</td>
+              <td class="irr-cell-mid">18%</td>
+              <td class="irr-cell-mid">21%</td>
+              <td class="irr-cell-high">24%</td>
+              <td class="irr-cell-high">27%</td>
+            </tr>
+            <tr>
+              <td class="row-header">Year 5 ★</td>
+              <td class="irr-cell-low">14%</td>
+              <td class="irr-cell-mid">17%</td>
+              <td class="irr-cell-high">21%</td>
+              <td class="irr-cell-high">25%</td>
+              <td class="irr-cell-high">28%</td>
+            </tr>
+            <tr>
+              <td class="row-header">Year 6</td>
+              <td class="irr-cell-lowest">12%</td>
+              <td class="irr-cell-low">15%</td>
+              <td class="irr-cell-mid">18%</td>
+              <td class="irr-cell-mid">22%</td>
+              <td class="irr-cell-high">25%</td>
+            </tr>
+            <tr>
+              <td class="row-header">Year 7</td>
+              <td class="irr-cell-lowest">11%</td>
+              <td class="irr-cell-low">13%</td>
+              <td class="irr-cell-mid">16%</td>
+              <td class="irr-cell-mid">19%</td>
+              <td class="irr-cell-mid">22%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display: flex; gap: 16px; margin-top: 10px; flex-wrap: wrap;">
+        <span style="display:flex;align-items:center;gap:6px;font-size:9.5px;color:var(--slate)"><span style="width:12px;height:12px;border-radius:2px;background:rgba(61,171,114,0.25);display:inline-block;"></span>25–28% IRR</span>
+        <span style="display:flex;align-items:center;gap:6px;font-size:9.5px;color:var(--slate)"><span style="width:12px;height:12px;border-radius:2px;background:rgba(61,171,114,0.12);display:inline-block;"></span>18–24% IRR</span>
+        <span style="display:flex;align-items:center;gap:6px;font-size:9.5px;color:var(--slate)"><span style="width:12px;height:12px;border-radius:2px;background:rgba(201,168,76,0.12);display:inline-block;"></span>14–17% IRR</span>
+        <span style="display:flex;align-items:center;gap:6px;font-size:9.5px;color:var(--slate)"><span style="width:12px;height:12px;border-radius:2px;background:rgba(122,147,173,0.1);display:inline-block;"></span>11–13% IRR</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 05 · COMPETITIVE SET ══ -->
+<div class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="sh-num">05</span>
+      <span class="sh-title">Competitive Set Analysis</span>
+      <div class="sh-line"></div>
+    </div>
+    <div class="table-scroll fade-up d1">
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Keys</th>
+            <th>Brand Tier</th>
+            <th>Est. ADR</th>
+            <th>OCC Est.</th>
+            <th>RevPAR Est.</th>
+            <th>Positioning</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background: rgba(201,168,76,0.04);">
+            <td class="bold">Garden Cliff Resort &amp; Spa<br><span class="tier-tag tier-subject">Subject</span></td>
+            <td class="bold">249</td>
+            <td>Independent 4★</td>
+            <td class="gold">฿3,000</td>
+            <td>75%</td>
+            <td>฿2,250</td>
+            <td>Beachfront · Wong Amat</td>
+            <td style="color:var(--gold)">ADR gap = primary upside thesis</td>
+          </tr>
+          <tr>
+            <td class="bold">Centara Grand Mirage<br><span class="tier-tag tier-luxury">Luxury</span></td>
+            <td>555</td>
+            <td>Centara 5★</td>
+            <td class="green">฿7,200</td>
+            <td>78%</td>
+            <td>฿5,616</td>
+            <td>Beachfront · Family / Luxury</td>
+            <td>Water park + 3 restaurants; direct comp</td>
+          </tr>
+          <tr>
+            <td class="bold">Pullman Pattaya Hotel G<br><span class="tier-tag tier-upper">Upper-Scale</span></td>
+            <td>353</td>
+            <td>Accor 5★</td>
+            <td class="teal">฿5,800</td>
+            <td>76%</td>
+            <td>฿4,408</td>
+            <td>North Pattaya · Business/Leisure</td>
+            <td>Strong MICE; Accor loyalty driver</td>
+          </tr>
+          <tr>
+            <td class="bold">Cape Dara Resort<br><span class="tier-tag tier-luxury">Luxury</span></td>
+            <td>255</td>
+            <td>Independent 5★</td>
+            <td class="green">฿6,400</td>
+            <td>72%</td>
+            <td>฿4,608</td>
+            <td>Cape Dara / North Pattaya</td>
+            <td>Post-renovation 2024; elevated positioning</td>
+          </tr>
+          <tr>
+            <td class="bold">Amari Pattaya<br><span class="tier-tag tier-upper">Upper-Scale</span></td>
+            <td>300</td>
+            <td>ONYX 4★+</td>
+            <td class="teal">฿4,600</td>
+            <td>74%</td>
+            <td>฿3,404</td>
+            <td>Pattaya Beach · Upscale</td>
+            <td>Strong domestic market mix</td>
+          </tr>
+          <tr>
+            <td class="bold">Avani Pattaya Resort<br><span class="tier-tag tier-upper">Upper-Scale</span></td>
+            <td>318</td>
+            <td>Minor Hotels 4★+</td>
+            <td class="teal">฿4,200</td>
+            <td>73%</td>
+            <td>฿3,066</td>
+            <td>North Pattaya · Beach</td>
+            <td>Lifestyle positioning; strong ADR trend</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="8">Garden Cliff's ADR of ฿3,000 sits 40–60% below comparable beachfront upper-scale peers. Post-rebrand to 4★+ affiliated brand, an ADR of ฿5,000–5,500 aligns with Amari/Avani comp set — representing a RevPAR uplift of ≈96% on current performance.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 06 · MARKET INTELLIGENCE ══ -->
+<div class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="sh-num">06</span>
+      <span class="sh-title">Market Intelligence</span>
+      <div class="sh-line"></div>
+    </div>
+    <div class="market-grid fade-up d1">
+      <div>
+        <div class="stat-row">
+          <span class="stat-label">Pattaya Market ADR (2024)</span>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="stat-val">฿3,498</span>
+            <span class="stat-badge sb-green">+8.5% YoY</span>
+          </div>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Pattaya Market Occupancy (2024)</span>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="stat-val">71.0%</span>
+            <span class="stat-badge sb-teal">+4.2pp</span>
+          </div>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Total Pattaya Hotel Supply (2024)</span>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="stat-val">31,581 Keys</span>
+            <span class="stat-badge sb-gold">141 Hotels</span>
+          </div>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">North Pattaya ADR Premium vs Market</span>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="stat-val">+45–65%</span>
+            <span class="stat-badge sb-green">Structural</span>
+          </div>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">U-Tapao Airport — NTP Date</span>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="stat-val">Apr 3, 2026</span>
+            <span class="stat-badge sb-teal">Active</span>
+          </div>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">U-Tapao Long-Term Capacity</span>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="stat-val">60M Pax</span>
+            <span class="stat-badge sb-green">50yr Concession</span>
+          </div>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Thailand Hotel Investment (2024)</span>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="stat-val">฿22 Billion</span>
+            <span class="stat-badge sb-gold">Record</span>
+          </div>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Avg Thai Hotel Transaction Size (2025)</span>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="stat-val">฿1.8 Billion</span>
+            <span class="stat-badge sb-teal">+80% vs 10yr avg</span>
+          </div>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Top Foreign Visitor Nationalities</span>
+          <span class="stat-val" style="font-size:11px">Indian · Chinese · Vietnamese</span>
+        </div>
+      </div>
+
+      <div>
+        <ul class="demand-driver-list">
+          <li>
+            <span class="dd-num">1</span>
+            <div>
+              <div class="dd-title">U-Tapao Airport Megaproject — ฿290 Billion</div>
+              <div class="dd-text">Construction formally commenced April 3, 2026. Phase 1 targets 3–6 million annual passengers, scaling to 60 million. The airport — just 30km from Wong Amat — is Thailand's most consequential hospitality demand catalyst, transforming Pattaya from a drive-market into a direct international arrival hub.</div>
+            </div>
+          </li>
+          <li>
+            <span class="dd-num">2</span>
+            <div>
+              <div class="dd-title">Eastern Economic Corridor (EEC) Investment Zone</div>
+              <div class="dd-text">Chonburi sits within the EEC priority zone. BOI incentives, streamlined foreign ownership structures, and infrastructure spending of ฿1.7 trillion are reshaping the demand profile from leisure-only to a mixed business/MICE/leisure market — expanding high-rate corporate demand.</div>
+            </div>
+          </li>
+          <li>
+            <span class="dd-num">3</span>
+            <div>
+              <div class="dd-title">India &amp; Middle East Source Market Surge</div>
+              <div class="dd-text">India was the #1 inbound nationality to Pattaya (1.6M arrivals, 2023), now accelerating post visa-free expansion to 93 countries. Indian HNW leisure travellers drive strong F&B and spa spend, fitting Garden Cliff's food &amp; beverage-heavy asset profile.</div>
+            </div>
+          </li>
+          <li>
+            <span class="dd-num">4</span>
+            <div>
+              <div class="dd-title">Wong Amat Supply Scarcity</div>
+              <div class="dd-text">The Wong Amat–Naklua beachfront corridor has zero new hotel supply planned at scale. Adjacent land values exceed ฿150 MB/Rai — reinforcing the land value floor on this asset. Any new-build entrant faces ฿3 billion+ replacement cost, anchoring Garden Cliff's pricing power.</div>
+            </div>
+          </li>
+          <li>
+            <span class="dd-num">5</span>
+            <div>
+              <div class="dd-title">Record Institutional Appetite for Thai Hotel Assets</div>
+              <div class="dd-text">2024 Thailand hotel investment reached ฿22 billion — a record. Average transaction size reached ฿1.8 billion in 2025. Chonburi/Pattaya ranked among top 4 acquisition markets nationally. Institutional cap rate compression of 6–8% creates strong exit optionality at this entry price.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 07 · REPLACEMENT COST ANALYSIS ══ -->
+<div class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="sh-num">07</span>
+      <span class="sh-title">Replacement Cost Analysis</span>
+      <div class="sh-line"></div>
+    </div>
+    <div class="repcost-grid fade-up d1">
+      <div>
+        <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 20px; font-weight: 600;">Cost Component Breakdown</div>
+
+        <div class="cost-bar-wrap">
+          <div class="cost-bar-label"><span class="cbl-name">Land Cost (11.5 Rai @ ฿120M/Rai)</span><span class="cbl-val">฿1,366 MB</span></div>
+          <div class="cost-bar-track"><div class="cost-bar-fill cb-land" style="width: 48%;"></div></div>
+        </div>
+        <div class="cost-bar-wrap">
+          <div class="cost-bar-label"><span class="cbl-name">Construction Cost (22,000 Sqm @ ฿55–75k)</span><span class="cbl-val">฿1,210–1,650 MB</span></div>
+          <div class="cost-bar-track"><div class="cost-bar-fill cb-const" style="width: 58%;"></div></div>
+        </div>
+        <div class="cost-bar-wrap">
+          <div class="cost-bar-label"><span class="cbl-name">FF&amp;OS&amp;E + Soft Costs + Pre-Opening (25%)</span><span class="cbl-val">฿300–413 MB</span></div>
+          <div class="cost-bar-track"><div class="cost-bar-fill cb-ffoe" style="width: 15%;"></div></div>
+        </div>
+        <div class="cost-bar-wrap">
+          <div class="cost-bar-label"><span class="cbl-name">Professional / Permitting Fees</span><span class="cbl-val">~฿80 MB</span></div>
+          <div class="cost-bar-track"><div class="cost-bar-fill cb-soft" style="width: 3%;"></div></div>
+        </div>
+
+        <div style="border-top: 1px solid var(--border); margin: 16px 0 16px;"></div>
+
+        <div class="cost-bar-wrap">
+          <div class="cost-bar-label"><span class="cbl-name" style="font-weight:700;color:var(--white);">TOTAL REPLACEMENT COST</span><span class="cbl-val" style="color: #E07070;">฿2,850–3,450 MB</span></div>
+          <div class="cost-bar-track" style="height:14px"><div class="cost-bar-fill cb-total" style="width: 100%;"></div></div>
+        </div>
+        <div class="cost-bar-wrap">
+          <div class="cost-bar-label"><span class="cbl-name" style="font-weight:700;color:var(--white);">ASKING PRICE</span><span class="cbl-val" style="color:#B8E04A;">฿1,700 MB</span></div>
+          <div class="cost-bar-track" style="height:14px"><div class="cost-bar-fill cb-ask" style="width: 49%;"></div></div>
+        </div>
+
+        <div class="green-callout">
+          <div class="gc-label">✓ 40–51% Below Replacement Cost</div>
+          <div class="gc-text">At ฿1,700 MB, the asset is offered at a 40–51% discount to its replacement value of ฿2,850–3,450 MB — providing structural capital protection. A new-build competitor with comparable land, keys, and amenities in the Wong Amat corridor would require a minimum 4–5 year development pipeline and ฿1.15–1.75 billion more capital outlay before generating a single dollar of revenue.</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 16px; font-weight: 600;">Per-Key Pricing Matrix</div>
+        <div class="table-scroll">
+          <table class="perkey-table">
+            <thead>
+              <tr><th>Metric</th><th>Low</th><th>Mid</th><th>High</th></tr>
+            </thead>
+            <tbody>
+              <tr class="subject-row"><td>Asking Price / Key</td><td colspan="2" style="color:#B8E04A;font-weight:700">฿6.83 MB/Key</td><td style="color:var(--gold)">—</td></tr>
+              <tr><td>Replacement Cost / Key</td><td>฿11.4 MB</td><td>฿12.5 MB</td><td>฿13.9 MB</td></tr>
+              <tr><td>Discount to Replacement</td><td class="bold" style="color:var(--green)">40%</td><td class="bold" style="color:var(--green)">45%</td><td class="bold" style="color:var(--green)">51%</td></tr>
+              <tr><td>Construction Cost / Sqm</td><td>฿55,000</td><td>฿65,000</td><td>฿75,000</td></div></td></tr>
+              <tr><td>Land Value / Rai</td><td colspan="3">฿120 MB/Rai (Market Validated)</td></tr>
+              <tr><td>Branded Comp Exit $/Key</td><td colspan="3">฿10–14 MB/Key (Market Comps)</td></tr>
+              <tr class="subject-row"><td>Implied Exit Value / Key</td><td>฿11.5 MB</td><td>฿13.0 MB</td><td>฿15.7 MB</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 12px; font-weight: 600; margin-top: 4px;">Entry vs Exit Price Comparison</div>
+        <div class="cost-bar-wrap" style="margin-top: 10px;">
+          <div class="cost-bar-label"><span class="cbl-name">Entry (Asking)</span><span class="cbl-val" style="color:#B8E04A">฿6.83 MB/Key</span></div>
+          <div class="cost-bar-track"><div class="cost-bar-fill cb-ask" style="width: 44%;"></div></div>
+        </div>
+        <div class="cost-bar-wrap">
+          <div class="cost-bar-label"><span class="cbl-name">Branded Comp Exit — Low</span><span class="cbl-val">฿10.0 MB/Key</span></div>
+          <div class="cost-bar-track"><div class="cost-bar-fill" style="width:64%; background: var(--teal-2); height:100%;border-radius:2px;"></div></div>
+        </div>
+        <div class="cost-bar-wrap">
+          <div class="cost-bar-label"><span class="cbl-name">Branded Comp Exit — Mid</span><span class="cbl-val" style="color:var(--green)">฿13.0 MB/Key</span></div>
+          <div class="cost-bar-track"><div class="cost-bar-fill" style="width:83%; background: var(--green); height:100%;border-radius:2px;"></div></div>
+        </div>
+        <div class="cost-bar-wrap">
+          <div class="cost-bar-label"><span class="cbl-name">Replacement Cost / Key</span><span class="cbl-val" style="color:#E07070">฿12.5 MB/Key</span></div>
+          <div class="cost-bar-track"><div class="cost-bar-fill cb-total" style="width:80%;"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 08 · FINANCIAL PROJECTIONS ══ -->
+<div class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="sh-num">08</span>
+      <span class="sh-title">Financial Projections</span>
+      <div class="sh-line"></div>
+    </div>
+    <div class="table-scroll fade-up d1">
+      <table>
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>ADR (฿)</th>
+            <th>OCC</th>
+            <th>RevPAR (฿)</th>
+            <th>Room Revenue (MB)</th>
+            <th>Total Revenue (MB)</th>
+            <th>GOP Margin</th>
+            <th>GOP (MB)</th>
+            <th>NOI (MB)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Keys</td>
-            <td>249</td>
-            <td>249</td>
-            <td>320 (+70)</td>
-          </tr>
-          <tr>
-            <td>ADR (THB)</td>
-            <td>3,000</td>
-            <td>4,200</td>
-            <td class="highlight-gold">5,500</td>
-          </tr>
-          <tr>
-            <td>Occupancy</td>
+            <td class="bold">Current Actual</td>
+            <td>฿3,000</td>
             <td>75%</td>
+            <td>฿2,250</td>
+            <td>฿205</td>
+            <td>฿340</td>
+            <td>28%</td>
+            <td>฿95</td>
+            <td>฿68</td>
+          </tr>
+          <tr style="background:rgba(37,145,142,0.04)">
+            <td class="bold" style="color:var(--teal-2)">Base Case — Year 3<br><span style="font-size:9px;font-weight:400;color:var(--slate)">Optimised · Unbranded</span></td>
+            <td class="teal">฿4,200</td>
             <td>78%</td>
-            <td class="highlight-gold">82%</td>
+            <td class="teal">฿3,276</td>
+            <td>฿297</td>
+            <td>฿505</td>
+            <td>34%</td>
+            <td>฿172</td>
+            <td>฿140</td>
           </tr>
-          <tr>
-            <td>RevPAR (THB)</td>
-            <td>2,250</td>
-            <td>3,276</td>
-            <td class="highlight-gold">4,510</td>
+          <tr style="background:rgba(61,171,114,0.04)">
+            <td class="bold" style="color:var(--green)">Upside — Year 5<br><span style="font-size:9px;font-weight:400;color:var(--slate)">Branded · Repositioned</span></td>
+            <td class="green">฿5,500</td>
+            <td>82%</td>
+            <td class="green">฿4,510</td>
+            <td>฿411</td>
+            <td>฿682</td>
+            <td>40%</td>
+            <td>฿273</td>
+            <td>฿223</td>
           </tr>
-          <tr>
-            <td>Room Revenue (MB/yr)</td>
-            <td>204.4</td>
-            <td>297.5</td>
-            <td class="positive">526.5</td>
-          </tr>
-          <tr>
-            <td>F&amp;B / Ancillary (MB/yr)</td>
-            <td>50</td>
-            <td>70</td>
-            <td>120</td>
-          </tr>
-          <tr class="subtotal">
-            <td>Total Revenue (MB/yr)</td>
-            <td>254</td>
-            <td>368</td>
-            <td class="highlight-gold">647</td>
-          </tr>
-          <tr>
-            <td>GOP Margin</td>
-            <td>32%</td>
-            <td>38%</td>
-            <td class="highlight-gold">42%</td>
-          </tr>
-          <tr class="subtotal">
-            <td>GOP (MB/yr)</td>
-            <td>81</td>
-            <td>140</td>
-            <td class="highlight-gold">272</td>
-          </tr>
-          <tr>
-            <td>EBITDA (MB/yr)</td>
-            <td>65</td>
-            <td>116</td>
-            <td class="highlight-gold">230</td>
-          </tr>
-          <tr>
-            <td>Cap Rate (Exit)</td>
+          <tr style="background:rgba(201,168,76,0.03)">
+            <td class="bold" style="color:var(--slate)">Pattaya Market Ref. (2024)</td>
+            <td class="gold">฿3,498</td>
+            <td>71%</td>
+            <td class="gold">฿2,484</td>
             <td>—</td>
-            <td>7.5%</td>
-            <td class="highlight-gold">6.5%</td>
-          </tr>
-          <tr class="total-row">
-            <td>Implied Asset Value (MB)</td>
-            <td>1,700</td>
-            <td>2,200</td>
-            <td class="positive">3,538</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <div style="display:flex;gap:10px;align-items:center;background:rgba(39,174,96,0.07);border:1px solid rgba(39,174,96,0.2);border-radius:3px;padding:12px 16px;">
-      <div style="font-size:22px;color:var(--green-accent);">↑</div>
-      <div>
-        <div style="font-size:9px;font-weight:700;color:var(--green-accent);letter-spacing:1px;text-transform:uppercase;">Total Value Creation Potential</div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.65);margin-top:3px;">Acquisition at 1,700 MB → Branded Exit at 3,538 MB = <strong style="color:white;">+1,838 MB uplift</strong> (+108% value creation) over a 5–7 year hold period</div>
+    <div class="revpar-bar-section fade-up d2">
+      <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 16px; font-weight: 600;">RevPAR Uplift Trajectory</div>
+      <div class="rbar-row">
+        <div class="rbar-header"><span class="rbar-label">Current Actual — RevPAR ฿2,250</span><span class="rbar-val">฿2,250</span></div>
+        <div class="rbar-track"><div class="rbar-fill rb-current"></div></div>
+      </div>
+      <div class="rbar-row">
+        <div class="rbar-header"><span class="rbar-label">Pattaya Market Reference 2024 — RevPAR ฿2,484</span><span class="rbar-val">฿2,484</span></div>
+        <div class="rbar-track"><div class="rbar-fill rb-market"></div></div>
+      </div>
+      <div class="rbar-row">
+        <div class="rbar-header"><span class="rbar-label">Base Case Year 3 — RevPAR ฿3,276 (+45.6%)</span><span class="rbar-val" style="color:var(--teal-2)">฿3,276</span></div>
+        <div class="rbar-track"><div class="rbar-fill rb-base"></div></div>
+      </div>
+      <div class="rbar-row">
+        <div class="rbar-header"><span class="rbar-label">Branded North Pattaya Comp Set Est. — RevPAR ฿4,000–4,600</span><span class="rbar-val" style="color:var(--gold)">฿4,300</span></div>
+        <div class="rbar-track"><div class="rbar-fill rb-branded"></div></div>
+      </div>
+      <div class="rbar-row">
+        <div class="rbar-header"><span class="rbar-label">Upside Year 5 — RevPAR ฿4,510 (+100% vs Current)</span><span class="rbar-val" style="color:var(--green)">฿4,510</span></div>
+        <div class="rbar-track"><div class="rbar-fill rb-upside"></div></div>
       </div>
     </div>
+    <p class="footnote">Room revenue = (ADR × OCC × 249 Keys × 365). Total revenue assumes rooms contribute ≈60% of total with F&B/Spa/Other at 40%. GOP benchmarked against C9 Hotelworks Thai resort operating data 2024. NOI = GOP less FF&E reserves (3–4% RevPAR), management fees (3%), and insurance. Market reference: CBRE Pattaya Hotel Market H2 2024.</p>
   </div>
-
-  <div class="full-width-divider"></div>
-
-  <div class="section exit-strategy">
-    <div class="section-header">
-      <span class="section-num">04</span>
-      <span class="section-title">Exit Strategy — Investor Return Scenarios</span>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="exit-scenarios">
-      <div class="exit-card conservative">
-        <span class="exit-card-label">Conservative</span>
-        <span class="exit-irr">18%</span>
-        <span class="exit-irr-label">IRR (USD)</span>
-        <div class="exit-metric">
-          Hold: <strong>5 Years</strong><br>
-          MOIC: <strong>1.8×</strong><br>
-          Exit Cap: <strong>8%</strong><br>
-          Exit Value: <strong>~2,200 MB</strong><br>
-          EBITDA Yr5: <strong>~116 MB</strong>
-        </div>
-      </div>
-
-      <div class="exit-card base">
-        <span class="exit-card-label">★ Base Case</span>
-        <span class="exit-irr">26%</span>
-        <span class="exit-irr-label">IRR (USD)</span>
-        <div class="exit-metric">
-          Hold: <strong>6 Years</strong><br>
-          MOIC: <strong>2.5×</strong><br>
-          Exit Cap: <strong>7%</strong><br>
-          Exit Value: <strong>~3,000 MB</strong><br>
-          EBITDA Yr6: <strong>~195 MB</strong>
-        </div>
-      </div>
-
-      <div class="exit-card upside">
-        <span class="exit-card-label">Upside</span>
-        <span class="exit-irr">34%</span>
-        <span class="exit-irr-label">IRR (USD)</span>
-        <div class="exit-metric">
-          Hold: <strong>7 Years</strong><br>
-          MOIC: <strong>3.2×</strong><br>
-          Exit Cap: <strong>6.5%</strong><br>
-          Exit Value: <strong>~3,538 MB</strong><br>
-          EBITDA Yr7: <strong>~230 MB</strong>
-        </div>
-      </div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:3px;padding:12px 14px;text-align:center;">
-        <div style="font-size:18px;margin-bottom:6px;">🏨</div>
-        <div style="font-size:8px;font-weight:700;color:white;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">Strategic Sale</div>
-        <div style="font-size:8.5px;color:rgba(255,255,255,0.4);line-height:1.5;">Regional operator or global brand acquires stabilized asset at trophy premium</div>
-      </div>
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:3px;padding:12px 14px;text-align:center;">
-        <div style="font-size:18px;margin-bottom:6px;">📈</div>
-        <div style="font-size:8px;font-weight:700;color:white;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">REIT / IPO</div>
-        <div style="font-size:8.5px;color:rgba(255,255,255,0.4);line-height:1.5;">Package into Thai REIT or hospitality trust at 15–20× EBITDA multiple</div>
-      </div>
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:3px;padding:12px 14px;text-align:center;">
-        <div style="font-size:18px;margin-bottom:6px;">🔄</div>
-        <div style="font-size:8px;font-weight:700;color:white;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">Recapitalize</div>
-        <div style="font-size:8.5px;color:rgba(255,255,255,0.4);line-height:1.5;">Refinance at stabilized value — return equity, retain cashflow stream</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-header">
-      <span class="section-num">05</span>
-      <span class="section-title">Expansion Opportunity — FAR Uplift</span>
-      <div class="section-line"></div>
-      <span class="badge-new">Value Add</span>
-    </div>
-
-    <div class="expansion-row">
-      <div class="expansion-block">
-        <div class="exp-title">Current State</div>
-        <div class="exp-stat"><span>Keys</span><strong>249</strong></div>
-        <div class="exp-stat"><span>GFA</span><strong>22,000 sqm</strong></div>
-        <div class="exp-stat"><span>FAR</span><strong>1.2</strong></div>
-        <div class="exp-stat"><span>Land</span><strong>18,228 sqm</strong></div>
-        <div class="exp-stat"><span>CAPEX Required</span><strong>—</strong></div>
-      </div>
-
-      <div class="expansion-arrow">
-        <div class="arrow-line"></div>
-        <div class="arrow-head" style="font-size:24px;color:var(--gold);">⟶</div>
-        <div style="font-size:7px;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;text-align:center;margin-top:4px;">Enhance<br>FAR</div>
-        <div class="arrow-line"></div>
-      </div>
-
-      <div class="expansion-block highlight-block">
-        <div class="exp-title">Post-Expansion</div>
-        <div class="exp-stat"><span>Keys</span><strong class="gold">320 Keys</strong></div>
-        <div class="exp-stat"><span>GFA</span><strong class="gold">27,300 sqm</strong></div>
-        <div class="exp-stat"><span>FAR Enhanced</span><strong class="gold">1.5</strong></div>
-        <div class="exp-stat"><span>New GFA Built</span><strong>+5,300 sqm</strong></div>
-        <div class="exp-stat"><span>CAPEX</span><strong class="gold">375 MB</strong></div>
-      </div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
-      <div style="background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.2);border-radius:3px;padding:14px;text-align:center;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--gold);font-weight:700;line-height:1;">+70</div>
-        <div style="font-size:8px;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">New Keys</div>
-      </div>
-      <div style="background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.2);border-radius:3px;padding:14px;text-align:center;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--gold);font-weight:700;line-height:1;">+20</div>
-        <div style="font-size:8px;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">MB/yr Revenue</div>
-      </div>
-      <div style="background:rgba(39,174,96,0.07);border:1px solid rgba(39,174,96,0.25);border-radius:3px;padding:14px;text-align:center;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--green-accent);font-weight:700;line-height:1;">+250</div>
-        <div style="font-size:8px;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">MB Value Added</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="full-width-divider"></div>
-
-  <div class="section section-bg-alt">
-    <div class="section-header">
-      <span class="section-num">06</span>
-      <span class="section-title">Market Intelligence — Pattaya 2025/26</span>
-      <div class="section-line"></div>
-      <span class="badge-hot">Live Data</span>
-    </div>
-
-    <div class="market-grid">
-      <div class="market-card">
-        <div class="market-card-title">Market Fundamentals</div>
-        <div class="market-stat">
-          <span class="market-stat-label">Thailand Hotel Transaction Vol.</span>
-          <span class="market-stat-val highlight-gold">13B+ THB</span>
-        </div>
-        <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:75%"></div></div>
-        <div class="market-stat">
-          <span class="market-stat-label">Pattaya Branded OCC (H1 2025)</span>
-          <span class="market-stat-val">68–72%</span>
-        </div>
-        <div class="progress-bar-wrap"><div class="progress-bar-fill teal-fill" style="width:70%"></div></div>
-        <div class="market-stat">
-          <span class="market-stat-label">National ADR Growth YoY</span>
-          <span class="market-stat-val positive">+5%</span>
-        </div>
-        <div class="progress-bar-wrap"><div class="progress-bar-fill green-fill" style="width:55%"></div></div>
-        <div class="market-stat">
-          <span class="market-stat-label">Chonburi Visitor Growth H1 2025</span>
-          <span class="market-stat-val positive">+3.4% YoY</span>
-        </div>
-        <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:34%"></div></div>
-      </div>
-
-      <div class="market-card">
-        <div class="market-card-title">Demand Drivers</div>
-        <div class="market-stat">
-          <span class="market-stat-label">TAT Foreign Arrivals Target 2025</span>
-          <span class="market-stat-val">40M+</span>
-        </div>
-        <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:82%"></div></div>
-        <div class="market-stat">
-          <span class="market-stat-label">Pattaya Foreign Arrivals 2026F</span>
-          <span class="market-stat-val positive">9.2M</span>
-        </div>
-        <div class="progress-bar-wrap"><div class="progress-bar-fill teal-fill" style="width:65%"></div></div>
-        <div class="market-stat">
-          <span class="market-stat-label">Thai Domestic Visitor Surge</span>
-          <span class="market-stat-val positive">+10.6% YoY</span>
-        </div>
-        <div class="progress-bar-wrap"><div class="progress-bar-fill green-fill" style="width:60%"></div></div>
-        <div class="market-stat">
-          <span class="market-stat-label">EEC Eastern Corridor Catalyst</span>
-          <span class="market-stat-val highlight-gold">Active</span>
-        </div>
-        <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:90%"></div></div>
-      </div>
-    </div>
-
-    <div style="background:rgba(192,57,43,0.06);border:1px solid rgba(192,57,43,0.2);border-radius:3px;padding:12px 16px;margin-bottom:12px;">
-      <div style="font-size:8px;font-weight:700;color:#E74C3C;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">⚠ Competitive Pipeline — Act Now</div>
-      <div style="font-size:9.5px;color:rgba(255,255,255,0.6);line-height:1.7;">
-        Aquatique Pattaya (THB 100B AWC project): <strong style="color:white;">Ritz-Carlton, JW Marriott (398 keys), Marriott Marquis (900 keys)</strong> entering market by 2028–30. Garden Cliff's <strong style="color:white;">north Pattaya beachfront location</strong> and <strong style="color:white;">freehold status</strong> represent a window to reposition <em>before</em> supply compression — capturing the branding premium ahead of the pipeline.
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-header">
-      <span class="section-num">07</span>
-      <span class="section-title">Competitive Set — North Pattaya Luxury</span>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="comp-set">
-      <div class="comp-card subject">
-        <div class="comp-name">Garden Cliff<br><em>Subject Property</em></div>
-        <span class="comp-adr">3,000</span>
-        <div class="comp-adr-label">Current ADR · THB</div>
-        <div class="comp-stars">★★★★</div>
-      </div>
-      <div class="comp-card">
-        <div class="comp-name">Pullman Pattaya Hotel</div>
-        <span class="comp-adr">5,200</span>
-        <div class="comp-adr-label">ADR · THB</div>
-        <div class="comp-stars">★★★★★</div>
-      </div>
-      <div class="comp-card">
-        <div class="comp-name">Centara Grand Mirage</div>
-        <span class="comp-adr">5,800</span>
-        <div class="comp-adr-label">ADR · THB</div>
-        <div class="comp-stars">★★★★★</div>
-      </div>
-      <div class="comp-card">
-        <div class="comp-name">Cape Dara Resort</div>
-        <span class="comp-adr">4,800</span>
-        <div class="comp-adr-label">ADR · THB</div>
-        <div class="comp-stars">★★★★★</div>
-      </div>
-    </div>
-
-    <div style="background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.15);border-radius:3px;padding:12px 16px;text-align:center;">
-      <div style="font-size:9px;color:rgba(255,255,255,0.55);letter-spacing:0.5px;">
-        Garden Cliff trades at a <strong style="color:var(--gold);">42–48% ADR discount</strong> to direct branded competitors on the same beachfront — the repositioning gap represents <strong style="color:white;">2,200–2,800 THB of recoverable premium</strong> through flag, FF&amp;E refresh, and F&amp;B repositioning.
-      </div>
-    </div>
-  </div>
-
-  <div class="full-width-divider"></div>
-
-  <div class="section section-bg-alt">
-    <div class="section-header">
-      <span class="section-num">08</span>
-      <span class="section-title">Live Guest Intelligence — 2024/25</span>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="reviews-grid">
-      <div class="review-card">
-        <div class="review-source">Trip.com <span class="review-score">8.8 / 10</span></div>
-        <div class="review-text">"Huge pool, well maintained. Right on a small private beach with a great cocktail bar. Beach Club with live music is a highlight. Highly suggested."</div>
-        <div style="font-size:7.5px;color:rgba(255,255,255,0.25);margin-top:7px;">— Verified Guest, Apr 2025</div>
-      </div>
-      <div class="review-card">
-        <div class="review-source">TripAdvisor <span class="review-score">4.5 / 5</span></div>
-        <div class="review-text">"Fantastic location right on the beach. Views of the Sanctuary of Truth, beautiful ocean views. Restaurant is great, food is delicious. Blue Dragon Cafe is very famous."</div>
-        <div style="font-size:7.5px;color:rgba(255,255,255,0.25);margin-top:7px;">— Verified Guest, 2026</div>
-      </div>
-      <div class="review-card">
-        <div class="review-source">Google Reviews <span class="review-score">4.4 / 5</span></div>
-        <div class="review-text">"Very good resort, facilities, sea view at reasonable prices. Very helpful staff. Recommended for families. Breakfast very very good."</div>
-        <div style="font-size:7.5px;color:rgba(255,255,255,0.25);margin-top:7px;">— Guest, May 2025</div>
-      </div>
-      <div class="review-card">
-        <div class="review-source">MakeMyTrip <span class="review-score">4.3 / 5</span></div>
-        <div class="review-text">"Staff is polite. Property is very beautiful. Hospitality is just awesome. Every single team member is friendly, helpful, and attentive."</div>
-        <div style="font-size:7.5px;color:rgba(255,255,255,0.25);margin-top:7px;">— Verified Guest, Jan 2026</div>
-      </div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;">
-      <div style="text-align:center;padding:10px 0;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold);font-weight:600;">8.8</div>
-        <div style="font-size:7.5px;color:rgba(255,255,255,0.35);letter-spacing:1px;text-transform:uppercase;">Overall</div>
-      </div>
-      <div style="text-align:center;padding:10px 0;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold);font-weight:600;">9.0</div>
-        <div style="font-size:7.5px;color:rgba(255,255,255,0.35);letter-spacing:1px;text-transform:uppercase;">Location</div>
-      </div>
-      <div style="text-align:center;padding:10px 0;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold);font-weight:600;">8.8</div>
-        <div style="font-size:7.5px;color:rgba(255,255,255,0.35);letter-spacing:1px;text-transform:uppercase;">Service</div>
-      </div>
-      <div style="text-align:center;padding:10px 0;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold);font-weight:600;">671</div>
-        <div style="font-size:7.5px;color:rgba(255,255,255,0.35);letter-spacing:1px;text-transform:uppercase;">Reviews</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-header">
-      <span class="section-num">09</span>
-      <span class="section-title">Investment Thesis — Why Now</span>
-      <div class="section-line"></div>
-    </div>
-
-    <ul class="why-now-list">
-      <li>
-        <span class="why-num">1</span>
-        <div class="why-text">
-          <strong>Deep Discount to Replacement Cost</strong>
-          <p>Acquisition at 1,700 MB versus replacement cost of 2,850–3,450 MB — a 40–51% structural discount. Land alone at 120 MB/Rai values the site at 1,366 MB, implying the operating business is acquired for just 334 MB.</p>
-        </div>
-      </li>
-      <li>
-        <span class="why-num">2</span>
-        <div class="why-text">
-          <strong>Surrounded by International Luxury Benchmarks</strong>
-          <p>Pullman, Centara Grand Mirage, and Cape Dara all command 4,800–5,800 THB ADR within visual proximity. A branding and FF&amp;E upgrade closes the gap immediately.</p>
-        </div>
-      </li>
-      <li>
-        <span class="why-num">3</span>
-        <div class="why-text">
-          <strong>Low FAR = Built-in Optionality</strong>
-          <p>Current FAR of 1.2 on 18,228 sqm leaves significant density headroom. An FAR enhancement to 1.5 unlocks +5,300 sqm and 70 additional keys for 375 MB CAPEX — generating ~250 MB incremental value.</p>
-        </div>
-      </li>
-      <li>
-        <span class="why-num">4</span>
-        <div class="why-text">
-          <strong>Proven Asset — 8.8/10 Guest Score, 75% OCC</strong>
-          <p>Strong operating fundamentals validate location and product quality. 671 verified reviews confirm Blue Dragon Cafe &amp; Beach Club as a genuine F&amp;B asset — a repositioned venue alone commands significant premium.</p>
-        </div>
-      </li>
-      <li>
-        <span class="why-num">5</span>
-        <div class="why-text">
-          <strong>Pipeline Urgency — Window Closing by 2028</strong>
-          <p>Ritz-Carlton and JW Marriott entering North Pattaya by 2028 will compress unbranded asset values. Repositioning before supply arrival maximizes brand premium and exit multiple.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-  <div class="section section-bg-alt">
-    <div class="section-header">
-      <span class="section-num">10</span>
-      <span class="section-title">Value Creation Roadmap</span>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="timeline">
-      <div class="tl-step">
-        <div class="tl-dot active">1</div>
-        <div>
-          <div class="tl-title">Acquire</div>
-          <div class="tl-date">2025/Q4</div>
-        </div>
-      </div>
-      <div class="tl-step">
-        <div class="tl-dot">2</div>
-        <div>
-          <div class="tl-title">Rebrand & Reposition</div>
-          <div class="tl-date">Yr 1–2</div>
-        </div>
-      </div>
-      <div class="tl-step">
-        <div class="tl-dot">3</div>
-        <div>
-          <div class="tl-title">Expand +70 Keys</div>
-          <div class="tl-date">Yr 2–3</div>
-        </div>
-      </div>
-      <div class="tl-step">
-        <div class="tl-dot">4</div>
-        <div>
-          <div class="tl-title">Stabilize EBITDA</div>
-          <div class="tl-date">Yr 4–5</div>
-        </div>
-      </div>
-      <div class="tl-step">
-        <div class="tl-dot">5</div>
-        <div>
-          <div class="tl-title">Strategic Exit</div>
-          <div class="tl-date">Yr 5–7</div>
-        </div>
-      </div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:3px;padding:14px 16px;">
-        <div style="font-size:7.5px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Rebranding Levers</div>
-        <div style="font-size:9px;color:rgba(255,255,255,0.55);line-height:1.8;">
-          · International soft or franchise brand flag<br>
-          · Full FF&amp;E &amp; rooms soft goods refresh<br>
-          · Blue Dragon → Signature Beach Club<br>
-          · Wellness / Spa repositioning upmarket<br>
-          · MICE &amp; events infrastructure upgrade
-        </div>
-      </div>
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:3px;padding:14px 16px;">
-        <div style="font-size:7.5px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Revenue Optimization</div>
-        <div style="font-size:9px;color:rgba(255,255,255,0.55);line-height:1.8;">
-          · GDS / OTA rate strategy overhaul<br>
-          · Direct booking engine + loyalty program<br>
-          · F&amp;B revenue per cover maximization<br>
-          · Spa &amp; wellness yield management<br>
-          · Corporate + MICE group contracting
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-cta">
-    <div class="cta-headline">Seize the Beachfront Advantage</div>
-    <div class="cta-sub">An Exclusive Acquisition Opportunity · Strictly Confidential</div>
-
-    <div class="contact-row">
-      <div class="contact-block">
-        <div class="contact-label">Exclusive Advisor</div>
-        <div class="contact-val">Monthon Mahakijdumrongnukul</div>
-      </div>
-      <div class="contact-divider"></div>
-      <div class="contact-block">
-        <div class="contact-label">Mobile</div>
-        <div class="contact-val">+66 80-657-8387</div>
-      </div>
-    </div>
-
-    <div style="text-align:center;margin-top:14px;position:relative;z-index:2;">
-      <div class="contact-label">Email</div>
-      <div class="contact-val" style="font-size:14px;">joecollection.m@gmail.com</div>
-    </div>
-
-    <div class="cta-gold-line"></div>
-  </div>
-
-  <div class="confidential-bar">
-    <div class="confidential-text">Strictly Private &amp; Confidential · Joe Collection · For Accredited Investors Only</div>
-    <div class="page-num">Garden Cliff Resort &amp; Spa Pattaya · Investment Memorandum · 2025</div>
-  </div>
-
-  <div class="watermark" style="position:fixed;pointer-events:none;z-index:0;opacity:0.015;">JC</div>
-
 </div>
+
+<!-- ══ 09 · EXIT STRATEGY ROADMAP ══ -->
+<div class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="sh-num">09</span>
+      <span class="sh-title">Exit Strategy Roadmap</span>
+      <div class="sh-line"></div>
+    </div>
+    <div class="exit-grid fade-up d1">
+      <div>
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="tl-dot"></div>
+            <div class="tl-year">Year 0–1 · Acquisition</div>
+            <div class="tl-title">Asset Acquisition &amp; Structuring</div>
+            <div class="tl-text">Execute purchase via SPV structure. Complete legal / title due diligence on Chanote freehold. Engage international hotel operator for brand affiliation term sheet (IHG, Marriott, Accor). Identify CapEx scope and appoint project manager.</div>
+          </div>
+          <div class="timeline-step">
+            <div class="tl-dot"></div>
+            <div class="tl-year">Year 1–2 · Renovation + CapEx</div>
+            <div class="tl-title">Brand Conversion &amp; Asset Upgrade</div>
+            <div class="tl-text">Full FF&E rollout. Soft goods replacement. F&B repositioning (Blue Dragon Beach Club as premium anchor). Jin Spa enhancement. Revenue management system integration with brand loyalty programme. Estimated CapEx ฿180–250 MB phased.</div>
+          </div>
+          <div class="timeline-step">
+            <div class="tl-dot"></div>
+            <div class="tl-year">Year 2–4 · Stabilisation</div>
+            <div class="tl-title">Rate Ramp &amp; NOI Expansion</div>
+            <div class="tl-text">ADR ramp from ฿3,000 → ฿4,200 → ฿5,500 through brand distribution, OTA repositioning, and direct booking channels. OCC maintained 78–82%. GOP margin improvement from 28% to 38–40%. NOI stabilises at ฿180–225 MB by Year 4.</div>
+          </div>
+          <div class="timeline-step">
+            <div class="tl-dot final"></div>
+            <div class="tl-year">Year 5–7 · Exit</div>
+            <div class="tl-title">Three Exit Pathways</div>
+            <div class="tl-text"><strong style="color:var(--gold)">Exit A — Trade Sale:</strong> Sell to institutional investor at 12–16× NOI (cap rate 6–8%). GDV ฿2,700–3,600 MB.<br><br><strong style="color:var(--teal-2)">Exit B — Operator Buy-Out:</strong> Sell to the affiliated brand operator who acquires managed asset for balance sheet. Premium of 5–15% vs. market.<br><br><strong style="color:var(--green)">Exit C — Portfolio Recapitalisation:</strong> Partial sell-down to REIT or private equity; retain 30–40% stake to participate in continued upside.</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 12px; font-weight: 600;">Exit Value Scenarios (Scenario B · Rebrand)</div>
+        <div class="table-scroll">
+          <table class="exit-value-table">
+            <thead>
+              <tr><th>Exit Multiple</th><th>NOI Basis</th><th>GDV (MB)</th><th>MOIC</th><th>IRR</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>10× NOI</td><td>฿221 MB</td><td>฿2,210</td><td>1.9×</td><td>14%</td></tr>
+              <tr><td>12× NOI</td><td>฿221 MB</td><td>฿2,652</td><td>2.3×</td><td>18%</td></tr>
+              <tr class="ev-highlight"><td>14× NOI ★</td><td>฿221 MB</td><td class="gold">฿3,094</td><td class="green">2.7×</td><td class="green">22%</td></tr>
+              <tr><td>16× NOI</td><td>฿221 MB</td><td>฿3,536</td><td>3.0×</td><td>25%</td></tr>
+              <tr><td>18× NOI</td><td>฿221 MB</td><td>฿3,978</td><td>3.4×</td><td>28%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="land-callout">
+          <div class="lc-label">Land Value Floor</div>
+          <div class="lc-text">The 11-1-57 Rai of freehold beachfront land in Wong Amat is independently valued at ฿120 MB/Rai (current market). At this rate, the land alone represents ≈฿1,380 MB in intrinsic value — providing a hard asset floor of 81% of the acquisition price regardless of hotel performance.</div>
+        </div>
+
+        <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 12px; font-weight: 600;">APAC Institutional Appetite</div>
+        <div class="apac-stat-row"><span class="as-label">Thailand Hotel Investment 2024</span><span class="as-val">฿22 Billion (Record)</span></div>
+        <div class="apac-stat-row"><span class="as-label">Thai Hotel 2025 Transaction Value</span><span class="as-val">฿10.14 Billion</span></div>
+        <div class="apac-stat-row"><span class="as-label">2026 Transaction Projection</span><span class="as-val">฿12+ Billion</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 10 · RISK MATRIX ══ -->
+<div class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="sh-num">10</span>
+      <span class="sh-title">Risk Assessment Matrix</span>
+      <div class="sh-line"></div>
+    </div>
+    <div class="card fade-up d1">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Risk Factor</th>
+              <th>Severity</th>
+              <th>Probability</th>
+              <th>Mitigant</th>
+              <th>Residual Risk</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bold">Brand Affiliation Delay / Rejection</td>
+              <td class="risk-cell-med">Medium</td>
+              <td class="risk-cell-low">Low</td>
+              <td>Multiple operators in pipeline (IHG / Accor / Wyndham). Independent operation viable at Scenario A returns.</td>
+              <td class="risk-cell-low">Low</td>
+            </tr>
+            <tr>
+              <td class="bold">CapEx Cost Overrun</td>
+              <td class="risk-cell-med">Medium</td>
+              <td class="risk-cell-med">Medium</td>
+              <td>Fixed-price contracts; phased release; 15% contingency reserve built into model. Thai construction market active and competitive.</td>
+              <td class="risk-cell-low">Low–Medium</td>
+            </tr>
+            <tr>
+              <td class="bold">Tourism Demand Shock (External)</td>
+              <td class="risk-cell-high">High</td>
+              <td class="risk-cell-low">Low</td>
+              <td>Thailand visitor demand recovering structurally; source market diversification (India, Middle East). Domestic market resilience as buffer.</td>
+              <td class="risk-cell-med">Medium</td>
+            </tr>
+            <tr>
+              <td class="bold">ADR Repositioning Failure</td>
+              <td class="risk-cell-med">Medium</td>
+              <td class="risk-cell-low">Low</td>
+              <td>Current OCC 75% demonstrates stable demand base. ADR gap vs comp-set (฿3K vs ฿5.2–7.8K) is structural, not cyclical. Brand loyalty drives rate premium.</td>
+              <td class="risk-cell-low">Low</td>
+            </tr>
+            <tr>
+              <td class="bold">New Supply Competition</td>
+              <td class="risk-cell-low">Low</td>
+              <td class="risk-cell-low">Low</td>
+              <td>Wong Amat beachfront land unavailable at scale. Construction cost + land = ฿3B+ for comparable new-build. 4–5 year lag. Subject asset is irreplaceable at this price.</td>
+              <td class="risk-cell-low">Low</td>
+            </tr>
+            <tr>
+              <td class="bold">Regulatory / Planning Risk (Expansion)</td>
+              <td class="risk-cell-med">Medium</td>
+              <td class="risk-cell-med">Medium</td>
+              <td>FAR uplift and planning permissions are Scenario C dependent only. Scenarios A/B do not require planning change. EEC framework supportive of hospitality development.</td>
+              <td class="risk-cell-low">Low</td>
+            </tr>
+            <tr>
+              <td class="bold">Foreign Ownership / SPV Structure</td>
+              <td class="risk-cell-low">Low</td>
+              <td class="risk-cell-low">Low</td>
+              <td>Chanote freehold title; established SPV/BOI structures. Legal firms active in Thai hotel M&amp;A. EEC zone allows streamlined foreign structures.</td>
+              <td class="risk-cell-low">Low</td>
+            </tr>
+            <tr>
+              <td class="bold">Exit Liquidity / Buyer Universe</td>
+              <td class="risk-cell-med">Medium</td>
+              <td class="risk-cell-low">Low</td>
+              <td>Record institutional demand (฿22B in 2024). Multiple exit pathways (trade sale, operator buyout, REIT). Asset size and location align with institutional cheque size.</td>
+              <td class="risk-cell-low">Low</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 11 · GUEST SENTIMENT ══ -->
+<div class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="sh-num">11</span>
+      <span class="sh-title">Guest Sentiment Analysis</span>
+      <div class="sh-line"></div>
+    </div>
+
+    <div class="review-grid fade-up d1">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-quote">"Beautiful beachfront accommodation in Pattaya. Right by the sea, wonderful beach club atmosphere, delicious food and lovely service. The sea breeze is wonderful."</div>
+        <div class="review-meta">TripAdvisor · 2026 · Beachfront Stay</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-quote">"Very nice place to spend a few nights. Located right on a small private beach with a nice big pool. There's a great bar-restaurant with live music right on the beachfront. Highly suggested."</div>
+        <div class="review-meta">Trip.com · Apr 2025 · Deluxe Seaview · Couple</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-quote">"Stay is amazing. Property is very beautiful. Staff is polite. Food is amazing. Highly recommend. Beautiful property and the rooms are amazing!"</div>
+        <div class="review-meta">MakeMyTrip · Jan 2026 · 3-Night Stay</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-quote">"Good time for family. Children enjoy playing in the water and on the beach. The food at night is good and breakfast is excellent. Great resort for families."</div>
+        <div class="review-meta">Trip.com · Jul 2025 · Family Suite · Family</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★☆</div>
+        <div class="review-quote">"Excellent arrangement. Nice, courteous, helpful staff. Room is spacious and hygienic. Food in the restaurant is wholesome and reasonably priced. Will visit again."</div>
+        <div class="review-meta">MakeMyTrip · Jun 2024 · Solo Traveller</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-quote">"Excellent stay, awesome property — beach dining, pool, and lovely sumptuous breakfast. Hospitality is outstanding. Staff is so kind. Housekeeping maintenance is excellent."</div>
+        <div class="review-meta">MakeMyTrip · Jan 2025 · Family Stay</div>
+      </div>
+    </div>
+
+    <div class="sentiment-grid fade-up d2">
+      <div>
+        <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; font-weight: 700;">Sentiment Score Indicators<br><span style="color:var(--slate);font-weight:400">Trip.com: 8.8/10 · 671 Reviews | TripAdvisor: 3.0–4.0/5</span></div>
+        <div class="sentiment-bar-row">
+          <div class="sbr-header"><span class="sbr-label">Location</span><span class="sbr-score">9.0/10</span></div>
+          <div class="sbr-track"><div class="sbr-fill" style="width:90%"></div></div>
+        </div>
+        <div class="sentiment-bar-row">
+          <div class="sbr-header"><span class="sbr-label">Staff &amp; Service</span><span class="sbr-score">8.8/10</span></div>
+          <div class="sbr-track"><div class="sbr-fill" style="width:88%"></div></div>
+        </div>
+        <div class="sentiment-bar-row">
+          <div class="sbr-header"><span class="sbr-label">Amenities &amp; Facilities</span><span class="sbr-score">8.6/10</span></div>
+          <div class="sbr-track"><div class="sbr-fill" style="width:86%"></div></div>
+        </div>
+        <div class="sentiment-bar-row">
+          <div class="sbr-header"><span class="sbr-label">Cleanliness</span><span class="sbr-score">8.8/10</span></div>
+          <div class="sbr-track"><div class="sbr-fill" style="width:88%"></div></div>
+        </div>
+        <div class="sentiment-bar-row">
+          <div class="sbr-header"><span class="sbr-label">Would Return / Recommend</span><span class="sbr-score">87%</span></div>
+          <div class="sbr-track"><div class="sbr-fill" style="width:87%"></div></div>
+        </div>
+        <div class="sentiment-bar-row">
+          <div class="sbr-header"><span class="sbr-label">Renovation / Upgrade Mentions</span><span class="sbr-score">High</span></div>
+          <div class="sbr-track"><div class="sbr-fill" style="width:72%; background: linear-gradient(90deg, var(--teal-2), #2BB5B2)"></div></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; font-weight: 700;">Investment Thesis Alignment</div>
+        <p class="thesis-paragraph">Guest sentiment across 671+ verified Trip.com reviews (rated <strong>8.8/10</strong>) and 457 TripAdvisor reviews confirms the asset's <strong>core strength: location, staff quality, pool, and beachfront</strong> — the irreplaceable physical attributes that command premium rate positioning. These are not features that require CapEx to create; they exist today at an ADR of only ฿3,000.</p>
+        <p class="thesis-paragraph" style="margin-top: 12px;">The single most consistent guest comment across all platforms is the <strong>gap between physical quality and price</strong> — guests repeatedly describe the property as excellent value, premium-quality accommodation at budget pricing. This is the clearest possible signal that ADR repositioning is demand-supported and overdue.</p>
+        <p class="thesis-paragraph" style="margin-top: 12px;">Reviews mentioning room condition, ageing soft goods, and F&B scope signal that a <strong>targeted FF&E investment</strong> (฿180–250 MB) would immediately close the quality gap with the branded comp-set, enabling ADR growth from ฿3,000 to ฿5,000–5,500 — a rate the market is already paying at neighbouring branded properties for the same location.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 12 · DEAL BOX ══ -->
+<div class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="sh-num">12</span>
+      <span class="sh-title">Why This Asset — Investment Thesis</span>
+      <div class="sh-line"></div>
+    </div>
+    <div class="deal-box fade-up d1">
+      <p class="deal-headline">"A beachfront freehold resort of irreplaceable location, offered at half its replacement cost — with a structural ADR gap that any competent operator closes in Year 1."</p>
+      <div class="deal-price">฿1,700,000,000</div>
+      <p class="deal-sub">฿6.83 Million Per Key · 249 Keys · Chanote Freehold · Wong Amat Beachfront</p>
+      <div class="deal-divider"></div>
+      <div class="deal-body">
+        <p>Garden Cliff Resort & Spa sits on 18,228 sqm of irreplaceable freehold land on the Wong Amat beachfront — a sub-market where the next comparable new-build would require ฿2,850–3,450 million and five years of development. At ฿1,700 MB, this asset is offered at a 40–51% discount to replacement cost, with an 81% hard asset land value floor of ≈฿1,380 MB. The structural protection is exceptional — and it exists before a single room upgrade is made.</p>
+        <p>The value-creation narrative is simple: the property already runs at 75% occupancy with 8.8/10 guest satisfaction. The ADR is ฿3,000. Directly adjacent branded competitors — Centara Grand Mirage, Pullman, Cape Dara — operate at ฿5,800–7,800. The gap is not a market failure; it is a management and positioning lag. Brand affiliation, an FF&E renovation of ฿180–250 MB, and distribution access to a global loyalty programme converts this asset into a ฿5,000–5,500 ADR property with 80%+ occupancy — a RevPAR uplift of 95–100% on the current baseline.</p>
+        <p>Add the macro: U-Tapao Airport broke ground April 3, 2026 — a ฿290 billion project that transforms Pattaya from a domestic drive-market into a direct international arrival hub, targeting 60 million annual passengers at build-out. EEC infrastructure investment, visa-free access to 93 countries, and surging Indian/Middle Eastern leisure demand create the strongest structural demand cycle North Pattaya has seen in two decades. This is the right asset, in the right location, at exactly the right moment in the cycle.</p>
+      </div>
+      <div class="deal-pills">
+        <span class="deal-pill">40–51% Below Replacement Cost</span>
+        <span class="deal-pill">Chanote Freehold Title</span>
+        <span class="deal-pill">Wong Amat Beachfront</span>
+        <span class="deal-pill">249 Keys · 8 Storeys</span>
+        <span class="deal-pill">75% OCC Operating</span>
+        <span class="deal-pill">IRR 18–26%</span>
+        <span class="deal-pill">MOIC 2.1–3.4×</span>
+        <span class="deal-pill">FAR Expansion Upside</span>
+        <span class="deal-pill">U-Tapao / EEC Macro</span>
+        <span class="deal-pill">Record Institutional Demand</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 13 · CONTACT FOOTER ══ -->
+<div class="contact-footer">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="cf-name">Monthon Mahakijdumrongnukul</div>
+        <div class="cf-title">Transaction Advisor · Joe Collection</div>
+        <div class="cf-contact-item">
+          <span class="cf-icon">✆</span>
+          <a href="tel:+66806578387" class="cf-link">+66 80-657-8387</a>
+        </div>
+        <div class="cf-contact-item">
+          <span class="cf-icon">✉</span>
+          <a href="mailto:joecollection.m@gmail.com" class="cf-link">joecollection.m@gmail.com</a>
+        </div>
+      </div>
+      <div class="cf-center">
+        <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 14px;">Exclusively Offered By</div>
+        <div style="width: 80px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); margin: 0 auto 14px;"></div>
+        <div style="font-size: 10px; color: var(--slate); letter-spacing: 1px;">Garden Cliff Resort &amp; Spa Pattaya<br>249 Keys · Chanote Freehold<br>฿1,700,000,000</div>
+      </div>
+      <div class="cf-right">
+        <div class="cf-wordmark">JOE<br>COLLECTION</div>
+        <div class="cf-sub">Hospitality Investment Advisory<br>Thailand</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 14 · DISCLAIMER ══ -->
+<div class="disclaimer">
+  <div class="container">
+    <p><strong style="color:var(--slate-2)">STRICTLY CONFIDENTIAL — FOR QUALIFIED INVESTORS ONLY</strong><br><br>
+    This Investment Memorandum has been prepared by Joe Collection for information purposes only and is addressed solely to qualified, sophisticated investors. It does not constitute an offer to sell or a solicitation of an offer to buy any security or asset. All financial projections, IRR estimates, MOIC calculations, and market data contained herein are forward-looking statements based on assumptions believed to be reasonable but are not guaranteed. Actual results may differ materially from those projected. Past performance is not indicative of future results. Market data sourced from CBRE Thailand, C9 Hotelworks, JLL Hotels &amp; Hospitality, Colliers Thailand, TripAdvisor, Trip.com, and public tourism statistics. Replacement cost estimates are indicative only and prepared for investment analysis purposes. Recipients should conduct their own independent due diligence, including legal, financial, and technical review, prior to making any investment decision. Joe Collection does not act as a licensed securities dealer or real estate agent and does not provide regulated financial advice. Land measurements expressed in Rai/Sq.Wah per Thai Land Department convention (1 Rai = 400 Sq.Wah = 1,600 Sqm). Data as at June 2026.</p>
+  </div>
+</div>
+
 </body>
 </html>
-
-
