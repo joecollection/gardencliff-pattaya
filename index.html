@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -202,13 +201,16 @@ body {
   border-radius: 3px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  overflow: hidden;
+  overflow: visible;
   margin-top: 40px;
 }
 .price-cell {
   padding: 14px 18px;
   border-right: 1px solid var(--border);
   position: relative;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 .price-cell:last-child { border-right: none; }
 .price-cell::before {
@@ -217,6 +219,7 @@ body {
   top: 0; left: 0; right: 0;
   height: 2px;
   background: linear-gradient(90deg, var(--gold), transparent);
+  border-radius: 3px 3px 0 0;
 }
 .price-cell.highlight::before { background: linear-gradient(90deg, #B8E04A, transparent); }
 .pc-label {
@@ -226,6 +229,7 @@ body {
   color: var(--slate);
   margin-bottom: 5px;
   font-weight: 600;
+  display: block;
 }
 .pc-value {
   font-size: clamp(13px, 2vw, 18px);
@@ -314,12 +318,14 @@ body {
   align-items: center;
   gap: 14px;
   margin-bottom: 36px;
+  flex-wrap: wrap;
 }
 .sh-num {
   font-family: 'Cormorant Garamond', serif;
   font-size: 12px;
   color: var(--slate);
   font-style: italic;
+  flex-shrink: 0;
 }
 .sh-title {
   font-family: 'Montserrat', sans-serif;
@@ -329,11 +335,22 @@ body {
   color: var(--gold);
   text-transform: uppercase;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .sh-line {
   flex: 1;
+  min-width: 20px;
   height: 1px;
   background: linear-gradient(90deg, var(--border), transparent);
+}
+@media (max-width: 500px) {
+  .sh-title {
+    white-space: normal;
+    word-break: break-word;
+    letter-spacing: 2px;
+    font-size: 8px;
+  }
+  .sh-line { display: none; }
 }
 
 /* ── CARDS ── */
@@ -343,7 +360,10 @@ body {
   border-radius: 3px;
   padding: 24px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 .card::before {
   content: '';
@@ -351,6 +371,7 @@ body {
   top: 0; left: 0; right: 0;
   height: 2px;
   background: linear-gradient(90deg, var(--gold), transparent);
+  border-radius: 3px 3px 0 0;
 }
 .card.teal::before { background: linear-gradient(90deg, var(--teal-2), transparent); }
 .card.green::before { background: linear-gradient(90deg, var(--green), transparent); }
@@ -367,13 +388,16 @@ body {
   background: var(--border);
   border: 1px solid var(--border);
   border-radius: 3px;
-  overflow: hidden;
+  overflow: visible;
 }
 .kpi-cell {
   background: var(--navy-2);
   padding: 20px 20px 16px;
   transition: background 0.2s;
   position: relative;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 .kpi-cell::after {
   content: '';
@@ -381,6 +405,7 @@ body {
   top: 0; left: 0; right: 0;
   height: 2px;
   background: linear-gradient(90deg, var(--gold), transparent);
+  border-radius: 3px 3px 0 0;
 }
 .kpi-cell:hover { background: var(--navy-3); }
 .kpi-label {
@@ -390,19 +415,23 @@ body {
   color: var(--slate);
   font-weight: 600;
   margin-bottom: 8px;
+  display: block;
 }
 .kpi-value {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 26px;
+  font-size: clamp(18px, 2.5vw, 26px);
   font-weight: 600;
   color: var(--white);
   line-height: 1;
   margin-bottom: 4px;
+  display: block;
+  word-break: break-word;
 }
 .kpi-sub {
   font-size: 10px;
   color: var(--gold);
   font-weight: 500;
+  display: block;
 }
 
 /* ── 02 OVERVIEW ── */
@@ -411,6 +440,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
+.two-col > * { min-width: 0; }
 .fact-chip-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -422,9 +452,13 @@ body {
   border: 1px solid var(--border);
   border-radius: 2px;
   padding: 10px 12px;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
-.fc-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 4px; }
-.fc-val { font-size: 12px; font-weight: 600; color: var(--white); }
+.fact-chip-grid > * { min-width: 0; }
+.fc-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 4px; display: block; }
+.fc-val { font-size: 12px; font-weight: 600; color: var(--white); display: block; word-break: break-word; }
 
 .operator-callout {
   background: rgba(201,168,76,0.07);
@@ -432,20 +466,25 @@ body {
   border-radius: 3px;
   padding: 14px 16px;
   margin-top: 14px;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
-.oc-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
-.oc-val { font-size: 12px; color: var(--white); font-weight: 600; }
+.oc-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; display: block; }
+.oc-val { font-size: 12px; color: var(--white); font-weight: 600; display: block; word-break: break-word; }
 
 .market-stat-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
   padding: 12px 0;
   border-bottom: 1px solid rgba(201,168,76,0.08);
 }
 .market-stat-row:last-child { border-bottom: none; }
-.ms-label { font-size: 10px; color: var(--slate-2); }
-.ms-val { font-size: 12px; font-weight: 700; color: var(--white); }
+.ms-label { font-size: 10px; color: var(--slate-2); flex: 1; min-width: 0; word-break: break-word; }
+.ms-val { font-size: 12px; font-weight: 700; color: var(--white); white-space: nowrap; flex-shrink: 0; text-align: right; }
 .ms-badge {
   font-size: 8px;
   font-weight: 700;
@@ -473,13 +512,17 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
+.scenario-grid > * { min-width: 0; }
 .scenario-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 3px;
   padding: 22px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 .scenario-card::before {
   content: '';
@@ -487,6 +530,7 @@ body {
   top: 0; left: 0; right: 0;
   height: 2px;
   background: linear-gradient(90deg, var(--gold), transparent);
+  border-radius: 3px 3px 0 0;
 }
 .scenario-card.best {
   border: 1px solid rgba(201,168,76,0.5);
@@ -552,11 +596,15 @@ body {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scrollbar-color: var(--gold) rgba(255,255,255,0.05);
+  width: 100%;
+  display: block;
 }
 .table-scroll::-webkit-scrollbar { height: 4px; }
 .table-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.04); }
 .table-scroll::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+.table-scroll--compact table { min-width: 300px; }
 .swipe-hint {
+  display: none;
   text-align: center;
   font-size: 9px;
   color: var(--slate);
@@ -566,7 +614,7 @@ body {
 }
 table {
   width: 100%;
-  min-width: 600px;
+  min-width: 500px;
   border-collapse: collapse;
   font-size: 11.5px;
 }
@@ -618,17 +666,19 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
 
 /* ── 06 MARKET ── */
 .market-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.market-grid > * { min-width: 0; }
 .stat-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
   padding: 13px 0;
   border-bottom: 1px solid rgba(201,168,76,0.08);
-  gap: 12px;
+  gap: 8px;
 }
 .stat-row:last-child { border-bottom: none; }
-.stat-label { font-size: 10.5px; color: var(--slate-2); flex: 1; }
-.stat-val { font-size: 13px; font-weight: 700; color: var(--white); text-align: right; white-space: nowrap; }
+.stat-label { font-size: 10.5px; color: var(--slate-2); flex: 1; min-width: 0; word-break: break-word; }
+.stat-val { font-size: 13px; font-weight: 700; color: var(--white); text-align: right; white-space: nowrap; flex-shrink: 0; }
 .stat-badge {
   font-size: 8px;
   font-weight: 700;
@@ -665,14 +715,18 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
 
 /* ── 07 REPLACEMENT COST ── */
 .repcost-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.repcost-grid > * { min-width: 0; }
 .cost-bar-wrap { margin-bottom: 10px; }
 .cost-bar-label {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 6px;
   margin-bottom: 5px;
 }
-.cbl-name { font-size: 10px; color: var(--slate-2); }
-.cbl-val { font-size: 10px; font-weight: 700; color: var(--white); }
+.cbl-name { font-size: 10px; color: var(--slate-2); flex: 1; min-width: 0; word-break: break-word; }
+.cbl-val { font-size: 10px; font-weight: 700; color: var(--white); white-space: nowrap; flex-shrink: 0; }
 .cost-bar-track {
   height: 10px;
   background: rgba(255,255,255,0.05);
@@ -696,9 +750,12 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
   border-radius: 3px;
   padding: 14px 16px;
   margin-top: 16px;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
-.gc-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--green); margin-bottom: 5px; }
-.gc-text { font-size: 11px; color: var(--slate-2); line-height: 1.55; }
+.gc-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--green); margin-bottom: 5px; display: block; }
+.gc-text { font-size: 11px; color: var(--slate-2); line-height: 1.55; display: block; word-break: break-word; overflow-wrap: break-word; }
 
 .perkey-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 20px; }
 .perkey-table th { padding: 8px 12px; text-align: left; font-size: 8px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid var(--border); }
@@ -709,9 +766,9 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
 /* ── 08 PROJECTIONS ── */
 .revpar-bar-section { margin-top: 28px; }
 .rbar-row { margin-bottom: 12px; }
-.rbar-header { display: flex; justify-content: space-between; margin-bottom: 5px; }
-.rbar-label { font-size: 10px; color: var(--slate-2); }
-.rbar-val { font-size: 10px; font-weight: 700; color: var(--white); }
+.rbar-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 6px; margin-bottom: 5px; }
+.rbar-label { font-size: 10px; color: var(--slate-2); flex: 1; min-width: 0; word-break: break-word; }
+.rbar-val { font-size: 10px; font-weight: 700; color: var(--white); white-space: nowrap; flex-shrink: 0; }
 .rbar-track { height: 12px; background: rgba(255,255,255,0.05); border-radius: 2px; overflow: hidden; }
 .rbar-fill { height: 100%; border-radius: 2px; }
 .rb-current { background: var(--slate); width: 38%; }
@@ -723,6 +780,7 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
 
 /* ── 09 EXIT ROADMAP ── */
 .exit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.exit-grid > * { min-width: 0; }
 .timeline { position: relative; padding-left: 28px; }
 .timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 1px; background: linear-gradient(180deg, var(--gold), transparent); }
 .timeline-step { position: relative; margin-bottom: 28px; }
@@ -752,19 +810,25 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
   border-radius: 3px;
   padding: 14px 16px;
   margin-bottom: 16px;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
-.lc-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 5px; }
-.lc-text { font-size: 11px; color: var(--slate-2); line-height: 1.55; }
+.lc-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 5px; display: block; }
+.lc-text { font-size: 11px; color: var(--slate-2); line-height: 1.55; display: block; word-break: break-word; overflow-wrap: break-word; }
 
 .apac-stat-row {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
   padding: 10px 0;
   border-bottom: 1px solid rgba(201,168,76,0.06);
 }
 .apac-stat-row:last-child { border-bottom: none; }
-.as-label { font-size: 10px; color: var(--slate); }
-.as-val { font-size: 11px; font-weight: 700; color: var(--teal-2); }
+.as-label { font-size: 10px; color: var(--slate); flex: 1; min-width: 0; word-break: break-word; display: block; }
+.as-val { font-size: 11px; font-weight: 700; color: var(--teal-2); white-space: nowrap; flex-shrink: 0; display: block; }
 
 /* ── 10 RISK MATRIX ── */
 .risk-cell-high { color: #E07070; font-weight: 700; }
@@ -784,11 +848,16 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
   border-radius: 3px;
   padding: 20px;
   position: relative;
+  overflow: visible;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 .review-card::before {
   content: '';
   position: absolute; top: 0; left: 0; right: 0; height: 2px;
   background: linear-gradient(90deg, var(--gold), transparent);
+  border-radius: 3px 3px 0 0;
 }
 .review-stars { color: var(--gold); font-size: 11px; margin-bottom: 10px; letter-spacing: 2px; }
 .review-quote {
@@ -802,10 +871,11 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
 .review-meta { font-size: 9px; letter-spacing: 1px; color: var(--slate); text-transform: uppercase; }
 
 .sentiment-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.sentiment-grid > * { min-width: 0; }
 .sentiment-bar-row { margin-bottom: 13px; }
-.sbr-header { display: flex; justify-content: space-between; margin-bottom: 5px; }
-.sbr-label { font-size: 10px; color: var(--slate-2); }
-.sbr-score { font-size: 10px; font-weight: 700; color: var(--gold); }
+.sbr-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 6px; margin-bottom: 5px; }
+.sbr-label { font-size: 10px; color: var(--slate-2); flex: 1; min-width: 0; word-break: break-word; }
+.sbr-score { font-size: 10px; font-weight: 700; color: var(--gold); white-space: nowrap; flex-shrink: 0; }
 .sbr-track { height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; }
 .sbr-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-bright)); }
 
@@ -820,7 +890,10 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
   padding: 56px 48px;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 .deal-box::before {
   content: '';
@@ -938,6 +1011,7 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
   .kpi-ribbon { grid-template-columns: repeat(4, 1fr); }
   .scenario-grid { grid-template-columns: repeat(2, 1fr); }
   .price-strip { grid-template-columns: repeat(3, 1fr); }
+  .swipe-hint { display: block; }
 }
 @media (max-width: 800px) {
   .two-col, .market-grid, .repcost-grid, .exit-grid, .sentiment-grid { grid-template-columns: 1fr; }
@@ -961,8 +1035,24 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
   .scenario-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 480px) {
+  html, body { overflow-x: hidden; width: 100%; max-width: 100vw; }
   .price-strip { grid-template-columns: 1fr 1fr; }
   .price-cell.divider { display: none; }
+  .cost-bar-label { flex-direction: column; gap: 2px; }
+  .cbl-val { text-align: left; }
+  .rbar-header { flex-direction: column; gap: 2px; }
+  .rbar-val { text-align: left; }
+  .stat-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .stat-val { text-align: left; }
+  .market-stat-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .ms-val { text-align: left; }
+  thead th { padding: 10px; font-size: 7.5px; letter-spacing: 1px; }
+  tbody td { padding: 10px; font-size: 10px; }
+  tfoot td { padding: 10px; }
+  .section { padding: 32px 0; }
+  .container { padding: 0 16px; }
+  .card { padding: 16px; }
+  .deal-box { padding: 24px 16px; }
 }
 </style>
 </head>
@@ -1217,7 +1307,7 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
 <!-- Hero images -->
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3px; margin-bottom: 0;">
   <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Beachfront pool" style="width:100%; height: 200px; object-fit: cover;">
-  <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Beachfront pool" style="width:100%; height: 200px; object-fit: cover;">
+  <img src="https://images.unsplash.com/photo-1540541338537-71cf4c15f3eb?w=600&q=80" alt="Resort pool" style="width:100%; height: 200px; object-fit: cover;">
   <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80" alt="Hotel room" style="width:100%; height: 200px; object-fit: cover;">
 </div>
 
@@ -1691,7 +1781,7 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
 
       <div>
         <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 16px; font-weight: 600;">Per-Key Pricing Matrix</div>
-        <div class="table-scroll">
+        <div class="table-scroll table-scroll--compact">
           <table class="perkey-table">
             <thead>
               <tr><th>Metric</th><th>Low</th><th>Mid</th><th>High</th></tr>
@@ -2075,62 +2165,4 @@ tfoot td { color: var(--gold); font-weight: 600; font-size: 10.5px; padding: 10p
       <p class="deal-sub">฿6.83 Million Per Key · 249 Keys · Chanote Freehold · Wong Amat Beachfront</p>
       <div class="deal-divider"></div>
       <div class="deal-body">
-        <p>Garden Cliff Resort & Spa sits on 18,228 sqm of irreplaceable freehold land on the Wong Amat beachfront — a sub-market where the next comparable new-build would require ฿2,850–3,450 million and five years of development. At ฿1,700 MB, this asset is offered at a 40–51% discount to replacement cost, with an 81% hard asset land value floor of ≈฿1,380 MB. The structural protection is exceptional — and it exists before a single room upgrade is made.</p>
-        <p>The value-creation narrative is simple: the property already runs at 75% occupancy with 8.8/10 guest satisfaction. The ADR is ฿3,000. Directly adjacent branded competitors — Centara Grand Mirage, Pullman, Cape Dara — operate at ฿5,800–7,800. The gap is not a market failure; it is a management and positioning lag. Brand affiliation, an FF&E renovation of ฿180–250 MB, and distribution access to a global loyalty programme converts this asset into a ฿5,000–5,500 ADR property with 80%+ occupancy — a RevPAR uplift of 95–100% on the current baseline.</p>
-        <p>Add the macro: U-Tapao Airport broke ground April 3, 2026 — a ฿290 billion project that transforms Pattaya from a domestic drive-market into a direct international arrival hub, targeting 60 million annual passengers at build-out. EEC infrastructure investment, visa-free access to 93 countries, and surging Indian/Middle Eastern leisure demand create the strongest structural demand cycle North Pattaya has seen in two decades. This is the right asset, in the right location, at exactly the right moment in the cycle.</p>
-      </div>
-      <div class="deal-pills">
-        <span class="deal-pill">40–51% Below Replacement Cost</span>
-        <span class="deal-pill">Chanote Freehold Title</span>
-        <span class="deal-pill">Wong Amat Beachfront</span>
-        <span class="deal-pill">249 Keys · 8 Storeys</span>
-        <span class="deal-pill">75% OCC Operating</span>
-        <span class="deal-pill">IRR 18–26%</span>
-        <span class="deal-pill">MOIC 2.1–3.4×</span>
-        <span class="deal-pill">FAR Expansion Upside</span>
-        <span class="deal-pill">U-Tapao / EEC Macro</span>
-        <span class="deal-pill">Record Institutional Demand</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══ 13 · CONTACT FOOTER ══ -->
-<div class="contact-footer">
-  <div class="container">
-    <div class="contact-grid">
-      <div>
-        <div class="cf-name">Monthon Mahakijdumrongnukul</div>
-        <div class="cf-title">Transaction Advisor · Joe Collection</div>
-        <div class="cf-contact-item">
-          <span class="cf-icon">✆</span>
-          <a href="tel:+66806578387" class="cf-link">+66 80-657-8387</a>
-        </div>
-        <div class="cf-contact-item">
-          <span class="cf-icon">✉</span>
-          <a href="mailto:joecollection.m@gmail.com" class="cf-link">joecollection.m@gmail.com</a>
-        </div>
-      </div>
-      <div class="cf-center">
-        <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--slate); margin-bottom: 14px;">Exclusively Offered By</div>
-        <div style="width: 80px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); margin: 0 auto 14px;"></div>
-        <div style="font-size: 10px; color: var(--slate); letter-spacing: 1px;">Garden Cliff Resort &amp; Spa Pattaya<br>249 Keys · Chanote Freehold<br>฿1,700,000,000</div>
-      </div>
-      <div class="cf-right">
-        <div class="cf-wordmark">JOE<br>COLLECTION</div>
-        <div class="cf-sub">Hospitality Investment Advisory<br>Thailand</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══ 14 · DISCLAIMER ══ -->
-<div class="disclaimer">
-  <div class="container">
-    <p><strong style="color:var(--slate-2)">STRICTLY CONFIDENTIAL — FOR QUALIFIED INVESTORS ONLY</strong><br><br>
-    This Investment Memorandum has been prepared by Joe Collection for information purposes only and is addressed solely to qualified, sophisticated investors. It does not constitute an offer to sell or a solicitation of an offer to buy any security or asset. All financial projections, IRR estimates, MOIC calculations, and market data contained herein are forward-looking statements based on assumptions believed to be reasonable but are not guaranteed. Actual results may differ materially from those projected. Past performance is not indicative of future results. Market data sourced from CBRE Thailand, C9 Hotelworks, JLL Hotels &amp; Hospitality, Colliers Thailand, TripAdvisor, Trip.com, and public tourism statistics. Replacement cost estimates are indicative only and prepared for investment analysis purposes. Recipients should conduct their own independent due diligence, including legal, financial, and technical review, prior to making any investment decision. Joe Collection does not act as a licensed securities dealer or real estate agent and does not provide regulated financial advice. Land measurements expressed in Rai/Sq.Wah per Thai Land Department convention (1 Rai = 400 Sq.Wah = 1,600 Sqm). Data as at June 2026.</p>
-  </div>
-</div>
-
-</body>
-</html>
+        <p>Garden Cliff Resort & Spa sits on 18,228 sqm of irreplaceable freehold land on the Wong Amat bea
